@@ -7,7 +7,6 @@ import company2 from '../pictures/sponsors/2.jpg';
 
 const Sponsors = () => {
   return (
-      <section>
         <section id="sponsors" className="ud-sponsors">
           <Container>
             <Row>
@@ -115,7 +114,7 @@ const Sponsors = () => {
 
           </Container>
         </section>
-      </section>
+
   );
 };
 

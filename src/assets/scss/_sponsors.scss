@@ -1,6 +1,7 @@
 /* ===== Sponsors CSS ===== */
 
 .ud-sponsors {
+    overflow-x: hidden;
     padding: 50px 0;
     background-color: rgb(19, 17, 17);
 
@@ -48,16 +49,42 @@
 
         .header-section {
             display: flex;
+            @media #{$xs} {
+                flex-wrap: wrap;
+                //justify-content: space-around;
+                justify-content: center;
+            }
+
+
         }
 
         .logo-section {
-            width: 30%;
+            width: 50%;
             display: flex;
-            margin-left: 10px;
+            margin:0 5px;
+            @media #{$xs} {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            @media #{$sm} {
+                flex-wrap: nowrap;
+
+            }
+            @media #{$mobile} {
+                flex-wrap: nowrap;
+            }
+
 
             img {
-                width: 50%;
-                margin: 10px;
+                height: 60%;
+                padding: 10px;
+                @media #{$xs} {
+                    height: 80px;
+                }
+                @media #{$sm} {
+                    height: 120px;
+                }
+
             }
         }
 
