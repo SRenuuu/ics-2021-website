@@ -11,6 +11,7 @@ import HeroSection from "./components/HeroSection";
 import Footer from "./components/footer"
 import Timeline from "./components/TimelineMain";
 import About from "./components/About";
+import ContactUs from "./components/ContactUs";
 
 function App() {
     AOS.init();
@@ -22,6 +23,7 @@ function App() {
             <Prizes/>
             <Sponsors/>
             <Faq/>
+            <ContactUs/>
             <Timeline/>
             <Footer/>
         </div>
