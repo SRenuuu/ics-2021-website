@@ -24,14 +24,14 @@ const Sponsors = () => {
 
             <Row>
               <h3 className="platinum-sponsor" data-aos="flip-left">PLATINUM SPONSOR</h3>
-                <SingleSponsor 
+                {/* <SingleSponsor 
                   animation = "fade-right"
                   sponsor_no = "ud-single-sponser first"
                   logo1 = {company1}
                   logo2 = {company2}
                   company = "ABC COMPANY"
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
 
                 <SingleSponsor 
                   animation = "zoom-in"
@@ -42,14 +42,14 @@ const Sponsors = () => {
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
 
-                <SingleSponsor 
+                {/* <SingleSponsor 
                   animation = "fade-left"
                   sponsor_no = "ud-single-sponser third"
                   logo1 = {company1}
                   logo2 = {company2}
                   company = "ABC COMPANY"
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
             </Row>
 
             <Row>
@@ -63,14 +63,14 @@ const Sponsors = () => {
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
 
-                <SingleSponsor 
+                {/* <SingleSponsor 
                   animation = "zoom-in"
                   sponsor_no = "ud-single-sponser fifth"
                   logo1 = {company1}
                   logo2 = {company2}
                   company = "ABC COMPANY"
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
 
                 <SingleSponsor 
                   animation = "fade-left"
@@ -82,7 +82,7 @@ const Sponsors = () => {
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
             </Row>
 
-            <Row>
+            {/* <Row>
               <h3 className="silver-sponsor" data-aos="flip-left">SILVER SPONSOR</h3>
                 <SingleSponsor 
                   animation = "fade-right"
@@ -110,7 +110,7 @@ const Sponsors = () => {
                   company = "ABC COMPANY"
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
-            </Row>
+            </Row> */}
 
           </Container>
         </section>
