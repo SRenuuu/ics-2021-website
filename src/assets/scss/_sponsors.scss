@@ -18,11 +18,11 @@
     }
 
     .platinum-sponsor {
-        color: #E5E4E2;
+        color: #E5E4E2;    
     }
 
     .gold-sponsor {
-        color: #b8860b;
+        color: #b8860b;    
     }
 
     .silver-sponsor {
@@ -35,17 +35,31 @@
         margin: 5px 5px;
         background-color: #191a18;
 
-        &.first , &.second , &.third {
+        &.second {
             border: 1px solid #E5E4E2;
-        }
+            position: relative;
+            left: 110%;
+            @media #{$xs} {
+                position: relative;
+                left: 0;
+            }
+            
+    }
 
-        &.fourth , &.fifth , &.sixth {
+        &.fourth , &.sixth {
             border: 1px solid #b8860b;
+            position: relative;
+            left: 55%;
+            @media #{$xs} {
+                position: relative;
+                left: 0;
+            }
+            
         }
 
-        &.seventh , &.eighth , &.ninth {
-            border: 1px solid #B8B9BB;
-        }
+        // &.seventh , &.eighth , &.ninth {
+        //     border: 1px solid #B8B9BB;
+        // }
 
         .header-section {
             display: flex;
@@ -58,25 +72,48 @@
 
         }
 
-        .logo-section {
-            width: 50%;
-            display: flex;
-            margin:0 5px;
-            @media #{$xs} {
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            @media #{$sm} {
-                flex-wrap: nowrap;
+        // .logo-section {
+        //     width: 30%;
+        //     display: flex;
+        //     margin:0 5px;
+        //     padding: 0px;
+        //     @media #{$xs} {
+        //         flex-wrap: wrap;
+        //         justify-content: space-between;
+        //     }
+        //     @media #{$sm} {
+        //         flex-wrap: nowrap;
 
-            }
-            @media #{$mobile} {
-                flex-wrap: nowrap;
-            }
+        //     }
+        //     @media #{$mobile} {
+        //         flex-wrap: nowrap;
+        //     }
+
+        .logo11 {
+            padding: 5px 5px 5px 5px;
+            width: 100px;
+            height: 100px;
+
+
+        }
+
+        .logo22 {
+            padding: 5px 5px 5px 5px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .company {
+           
+            margin-top: 35px;
+            // width: 100px;
+            // height: 100px;
+        }
 
 
             img {
-                height: 60%;
+                height: 90px;
+                width: 90px;
                 padding: 10px;
                 @media #{$xs} {
                     height: 80px;
@@ -88,10 +125,14 @@
             }
         }
 
-        .company-name {
-            width: 70%;
-            padding: 25px;
-        }
+        // .company-name {
+        //     width: 70%;
+            
+
+        //     h5{
+        //         padding-top: 50px;
+        //     }
+        // }
 
         font {
             font-size: medium;
@@ -117,5 +158,5 @@
         // border-color: rgba(255, 139, 30, 0.692);
     }
 
-}
+
 
