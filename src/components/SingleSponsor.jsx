@@ -6,13 +6,26 @@ const SingleSponsor = ({ animation, sponsor_no, logo1, logo2, company, descripti
         <Col lg={4} md={6} xs={12} data-aos={animation}>
           <section className={sponsor_no}>
             <div className="header-section">
-              <div className="logo-section" >
+              {/* <div className="logo-section" >
                 <img src={logo1} alt="Logo" />
                 <img src={logo2} alt="Logo" />
+              </div> */}
+
+              <div className="logo11">  
+                <img src={logo1} alt="Logo" />
               </div>
-              <div className="company-name">
+
+              <div className="logo22">  
+              <img src={logo2} alt="Logo" />
+              </div>
+
+              <div className="company">  
+                <h5>Company</h5>
+              </div>
+
+              {/* <div className="company-name">
                 <h5>{company}</h5>
-              </div>
+              </div> */}
             </div>
             <p className="ud-content">
               <font>{description}</font>
