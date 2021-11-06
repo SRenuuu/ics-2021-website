@@ -7,15 +7,15 @@
     min-height: fit-content;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding-top: 90px;
+    padding-top: 110px;
 
     @media #{$lg} {
-        padding-top: 100px;
+        padding-top: 90px;
     }
 
     @media #{$laptop} {
-        padding-top: 125px;
-        padding-bottom: 15px;
+        padding-top: 100px;
+        padding-bottom: 10px;
     }
 
     @media #{$desktop} {
@@ -28,8 +28,16 @@
     max-width: 780px;
     font-size: 18px;
 
-    @media #{$sm} {
+    @media #{$xs} {
+        font-size: 19px;
+    }
+
+    @media #{$md} {
         font-size: 20px;
+    }
+
+    @media #{$lg} {
+        font-size: 22px;
     }
 
     @media #{$laptop} {
@@ -53,15 +61,15 @@
         animation: bannerImgBounce 3s ease-in-out 0s infinite alternate;
 
         @media #{$sm} {
-            height: 200px;
+            height: 190px;
         }
 
         @media #{$md} {
-            height: 220px;
+            height: 200px;
         }
 
         @media #{$laptop} {
-            height: 220px;
+            height: 210px;
         }
 
         @media #{$desktop} {
@@ -74,15 +82,15 @@
         color: var(--white);
         opacity: 0.8;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.98em;
         line-height: 1.6em;
-        min-height: 60px;
+        min-height: 65px;
     }
 
     .ud-hero-desc {
         font-weight: lighter;
         font-style: italic;
-        font-size: 0.82em;
+        font-size: 0.88em;
         text-align: center;
         color: var(--white);
         opacity: 0.8;
@@ -92,21 +100,39 @@
         color: rgba(255, 255, 255, 0.7);
 
         .flip-countdown-title {
-            font-size: 0.8em !important;
+            font-size: 0.76em !important;
             padding-top: 10px;
         }
 
         .flip-countdown-piece {
 
             .flip-countdown-card .flip-countdown-card-sec {
-                font-size: 64px;
+                font-size: 35px;
 
-                .card__top, .card__bottom, .card__back {
-                    padding: 0 0.2em;
+                @media #{$mobile} {
+                    .card__top, .card__bottom, .card__back {
+                        padding: 0.06em 0.15em;
+                    }
+
+                    .card__back {
+                        padding: 0.06em;
+                    }
                 }
 
-                .card__back {
-                    padding: 0 0.097em;
+                @media #{$laptop} {
+                    font-size: 45px;
+                }
+
+                @media #{$desktop} {
+                    font-size: 60px;
+                    //.card__top, .card__bottom, .card__back {
+                    //    padding: 0 0.2em;
+                    //
+                    //}
+                    //
+                    //.card__back {
+                    //    padding: 0 0.097em;
+                    //}
                 }
             }
         }

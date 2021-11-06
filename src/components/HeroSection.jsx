@@ -19,7 +19,7 @@ const HeroSection = () => {
                                 <ReactRotatingText
                                     items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC', 'Get ready!']}/>
                             </h3>
-                            <p className="ud-hero-desc mt-3 mt-xxl-4 p-2">
+                            <p className="ud-hero-desc mt-3 mt-lg-2 mt-xxl-4 p-2">
                                 Registrations open in
                             </p>
                             <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4">
