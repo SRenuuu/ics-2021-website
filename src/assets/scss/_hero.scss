@@ -2,11 +2,12 @@
 
 .ud-hero {
     background: var(--bs-black-rgb);
-    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.emagister.com.co/blog/wp-content/uploads/2021/08/ciberataque.jpg");
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/alert-background.webp");
     background-position: center;
     min-height: fit-content;
     background-attachment: fixed;
-    padding-top: 100px;
+    background-repeat: no-repeat;
+    padding-top: 90px;
 
     @media #{$lg} {
         padding-top: 100px;
@@ -75,12 +76,13 @@
         text-align: center;
         font-size: 1em;
         line-height: 1.6em;
+        min-height: 60px;
     }
 
     .ud-hero-desc {
         font-weight: lighter;
         font-style: italic;
-        font-size: 0.8em;
+        font-size: 0.82em;
         text-align: center;
         color: var(--white);
         opacity: 0.8;
@@ -95,11 +97,9 @@
         }
 
         .flip-countdown-piece {
-            margin: 0 0.3em;
 
             .flip-countdown-card .flip-countdown-card-sec {
                 font-size: 64px;
-                margin: 15px;
 
                 .card__top, .card__bottom, .card__back {
                     padding: 0 0.2em;

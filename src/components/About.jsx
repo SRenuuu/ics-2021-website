@@ -4,14 +4,14 @@ import '../assets/scss/_about.scss';
 const About = () => {
 
     return (
-        <section id="about" className="ud-about aw-dark-back py-5">
+        <section id="about" className="ud-about pt-1 pb-4 my-5">
             <Container>
                 <Row>
                     <Col xs={12} data-aos="zoom-in">
-                        <h2 className="neonText mx-auto text-center my-3 p-3">What is iCS Hack The World?</h2>
+                        <h2 className="mx-auto text-center my-3 p-3">What is iCS Hack The World?</h2>
                     </Col>
                     <Col xs={12}>
-                        <h4 className="text-center m-1 mt-4" data-aos="zoom-in-up">
+                        <h4 className="text-center m-2 mt-3 text-light" data-aos="zoom-in-up">
                             iCS Hack the World is a 24-hour Capture the Flag competition that will put your hacking
                             skills
                             to the ultimate test!
@@ -19,9 +19,9 @@ const About = () => {
                     </Col>
                 </Row>
 
-                <Row className="my-5 py-1">
+                <Row className="my-4 py-2 pb-3">
                     <Col xs={12}>
-                        <div className="card animated fadeInDown">
+                        <div className="aw-about card animated fadeInDown py-2">
                             <div className="card-group">
                                 <div className="card mb-4 border-0">
                                     <div className="card-body">
@@ -86,7 +86,7 @@ const About = () => {
 
                 <Row>
                     <Col xs={12}>
-                        <h4 data-aos="fade-up m-4">
+                        <h4 data-aos="fade-up m-3 my-4 pb-3">
                             So put together a team, have a little pep talk, and get ready to start hacking!
                         </h4>
                     </Col>

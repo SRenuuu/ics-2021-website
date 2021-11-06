@@ -8,7 +8,6 @@
     z-index: 99;
     @include transition(0.3s);
     font-weight: 500;
-
 }
 
 .sticky {
@@ -49,7 +48,7 @@
     & .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: white;
+        background-color: var(--white);
         display: block;
         margin: 5px 0;
         position: relative;
@@ -115,7 +114,7 @@
         & > a {
             font-size: 16px;
             font-weight: 400;
-            color: white; // nav item colors
+            color: var(--white); // nav item colors
             @include transition(0.3s);
             padding: 20px 8px;
             position: relative;
@@ -128,11 +127,11 @@
 
             &:hover,
             &.active {
-                color: #ff6600;
+                color: var(--primary-color);
                 opacity: 0.5;
 
                 @media #{$md, $xs} {
-                    color: #ff6600;
+                    color: var(--primary-color);
                     opacity: 1;
                 }
             }
@@ -141,7 +140,7 @@
         .ud-submenu {
             position: absolute;
             width: 250px;
-            background: #ffffff; //color of reg btn - TOP
+            background: var(--white); //color of reg btn - TOP
             top: 110%;
             padding: 20px 30px;
             box-shadow: 0 15px 44px rgba(16, 16, 16, 0.18);
@@ -166,22 +165,22 @@
 
             .ud-submenu-link {
                 padding: 7px 0;
-                color: #ffffff; //
+                color: var(--white); //
                 font-size: 14px;
 
                 &:hover {
-                    color: #ff6600; //
+                    color: var(--primary-color); //
                 }
             }
         }
 
         &:hover {
             & > a {
-                color: #ff6600; //navitem hover : TOP
+                color: var(--primary-color); //navitem hover : TOP
                 opacity: 0.5;
 
                 @media #{$md, $xs} {
-                    color: #ff6600; //navitem hover : TOP
+                    color: var(--primary-color); //navitem hover : TOP
                     opacity: 1;
                 }
             }
@@ -239,11 +238,11 @@
     }
 
     .ud-white-btn {
-        background: #ff6600; // register button
+        background: var(--primary-color); // register button
 
         &:hover {
             background: black; //register bgclolor  hovers : TOP
-            color: #ff6600; //register txtcolor hovers : TOP
+            color: var(--primary-color); //register txtcolor hovers : TOP
         }
     }
 }
@@ -251,7 +250,7 @@
 .sticky {
     & .navbar-toggler {
         & .toggler-icon {
-            background-color: rgb(255, 255, 255); //toggle btn 3 lines
+            background-color: var(--white); //toggle btn 3 lines
         }
     }
 
@@ -259,18 +258,18 @@
         & .nav-item {
             &:hover {
                 & > a {
-                    color: #ff6600; //nav item hover : not top
+                    color: var(--primary-color); //nav item hover : not top
                     opacity: 1;
                 }
             }
 
             & a {
-                color: rgb(255, 255, 255); //nav item hover : not top
+                color: var(--white); //nav item hover : not top
                 font-weight: 500;
 
                 &.active,
                 &:hover {
-                    color: #ff6600; //nav item active hover : not top
+                    color: var(--primary-color); //nav item active hover : not top
                     opacity: 1;
                 }
             }
@@ -280,22 +279,22 @@
     .navbar-btn {
         .ud-main-btn {
             &.ud-login-btn {
-                color: #ff6600;
+                color: var(--primary-color);
 
                 &:hover {
-                    color: #ff6600;
+                    color: var(--primary-color);
                     opacity: 1;
                 }
             }
         }
 
         .ud-white-btn {
-            background: #ff6600; //register btn bgcolor  : not top
-            color: white; //register btn txtcolor  : not top
+            background: var(--primary-color); //register btn bgcolor  : not top
+            color: var(--white); //register btn txtcolor  : not top
 
             &:hover {
-                background: white; //register btn bgcolor hovers : not top
-                color: #ff6600; //register btn txtcolor hovers : not top
+                background: var(--white); //register btn bgcolor hovers : not top
+                color: var(--primary-color); //register btn txtcolor hovers : not top
             }
         }
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import logo from "../assets/images/ics-logo.png"
+import logo from "../assets/images/ics-logo.webp"
 import FlipCountdown from '@rumess/react-flip-countdown';
 import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
@@ -22,7 +22,7 @@ const HeroSection = () => {
                             <p className="ud-hero-desc mt-3 mt-xxl-4 p-2">
                                 Registrations open in
                             </p>
-                            <div className="ud-hero-buttons my-2 mt-5 mt-sm-3 mt-lg-3 mt-xxl-4">
+                            <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4">
                                 {/*<a href="/" rel="nofollow noopener" target="_blank"*/}
                                 {/*   className="ud-main-btn ud-white-btn mx-3">*/}
                                 {/*  Register Now*/}
