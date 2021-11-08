@@ -1,5 +1,5 @@
 import {Col, Container, Row} from 'react-bootstrap';
-import CardPrize from './CardPrize';
+import AwardCard from './AwardCard';
 
 import firstPlacePic from '../assets/images/prizes/first-place.webp'
 import secondPlacePic from '../assets/images/prizes/second-place.webp'
@@ -19,7 +19,7 @@ const Awards = () => {
 
                 <Row className="align-items-center justify-content-center">
 
-                    <CardPrize place="Second place"
+                    <AwardCard place="Second place"
                                type="ud-single-awards first-item"
                                image={secondPlacePic}
                                altText="Silver trophy"
@@ -27,7 +27,7 @@ const Awards = () => {
                                pcolor="#CBD5DB"
                                anim="fade-right"/>
 
-                    <CardPrize place="First place"
+                    <AwardCard place="First place"
                                type="ud-single-awards active"
                                image={firstPlacePic}
                                altText="Gold trophy"
@@ -35,7 +35,7 @@ const Awards = () => {
                                pcolor="#F9CA1A"
                                anim="flip-up"/>
 
-                    <CardPrize place="Third place"
+                    <AwardCard place="Third place"
                                type="ud-single-awards last-item"
                                image={thirdPlacePic}
                                altText="Bronze trophy"

@@ -1,6 +1,6 @@
 import {Col} from 'react-bootstrap';
 
-const CardPrize = ({place, prize, image, altText, type, pcolor, anim}) => {
+const AwardCard = ({place, prize, image, altText, type, pcolor, anim}) => {
     return (
         <Col lg={4} md={6} sm={10} data-aos={anim}>
             <div className={type}>
@@ -21,4 +21,4 @@ const CardPrize = ({place, prize, image, altText, type, pcolor, anim}) => {
     )
 }
 
-export default CardPrize;
+export default AwardCard;

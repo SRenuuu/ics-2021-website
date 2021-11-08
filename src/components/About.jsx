@@ -4,7 +4,7 @@ import '../assets/scss/_about.scss';
 const About = () => {
 
     return (
-        <section id="about" className="ud-about pt-1 pb-4 my-5">
+        <section id="about" className="ud-about pt-1 pt-lg-0 pb-4 my-5">
             <Container>
                 <Row>
                     <Col xs={12} data-aos="zoom-in">

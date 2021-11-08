@@ -109,14 +109,14 @@
             .flip-countdown-card .flip-countdown-card-sec {
                 font-size: 35px;
 
-                @media #{$mobile} {
-                    font-size: 38px;
+                @media #{$mobile, $sm} {
+                    font-size: 40px;
                     .card__top, .card__bottom {
-                        padding-top: 2.8px;
+                        padding-top: 2.2px;
                     }
 
                     .card__back {
-                        padding-top: 2.8px;
+                        padding-top: 2.2px;
                     }
                 }
 

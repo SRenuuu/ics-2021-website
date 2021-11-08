@@ -8,11 +8,11 @@ import company2 from '../pictures/sponsors/2.jpg';
 const Sponsors = () => {
   return (
       <section id="sponsors" className="ud-sponsors">
-        <Container className="px-3 px-lg-2">
-          <Row>
+        <Container className="px-4 px-lg-2">
+          <Row className="mt-0">
             <Col xs={12}>
               <div className="aw-sponsors-title">
-                <h2 className="mx-auto text-center my-2 p-3 py-2 mb-2">SPONSORS</h2>
+                <h2 className="mx-auto text-center">SPONSORS</h2>
                 <div className="text">
                   {/* <p>
                       Here are the our honorable sponsors.
@@ -23,7 +23,7 @@ const Sponsors = () => {
           </Row>
 
           <Row>
-            <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-3 pt-lg-0" data-aos="flip-left">PLATINUM SPONSOR</h4>
+            <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">PLATINUM SPONSOR</h4>
             {/* <SingleSponsor
                   animation = "fade-right"
                   sponsor_no = "ud-single-sponser first"
@@ -52,8 +52,8 @@ const Sponsors = () => {
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
           </Row>
 
-          <Row className="mt-2">
-            <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-3" data-aos="flip-left">GOLD SPONSORS</h4>
+          <Row className="mt-2 pt-2">
+            <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">GOLD SPONSORS</h4>
             <SingleSponsor
                 animation="fade-right"
                 sponsor_no="ud-single-sponser fourth"
