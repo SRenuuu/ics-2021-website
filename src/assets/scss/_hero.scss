@@ -110,12 +110,13 @@
                 font-size: 35px;
 
                 @media #{$mobile} {
-                    .card__top, .card__bottom, .card__back {
-                        padding: 0.06em 0.15em;
+                    font-size: 38px;
+                    .card__top, .card__bottom {
+                        padding-top: 2.8px;
                     }
 
                     .card__back {
-                        padding: 0.06em;
+                        padding-top: 2.8px;
                     }
                 }
 

@@ -25,6 +25,7 @@ const NavBar = () => {
 
     return (
         <>
+            {/*eslint-disable-next-line*/}
             <a href="#" className="back-to-top" style={isBackToTopShown ? {opacity: 1} : {opacity: 0}}>
                 <FaChevronUp/>
             </a>
@@ -68,6 +69,7 @@ const NavBar = () => {
                                     </ul>
                                 </div>
                                 <div className="navbar-btn d-none d-sm-inline-block mx-3">
+                                    {/*eslint-disable-next-line*/}
                                     <a className="ud-main-btn ud-white-btn" href="#">
                                         Register
                                     </a>
