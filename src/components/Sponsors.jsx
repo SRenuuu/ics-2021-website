@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import SingleSponsor from './SingleSponsor';
 
 import company1 from '../pictures/sponsors/1.jpg';
@@ -7,24 +7,24 @@ import company2 from '../pictures/sponsors/2.jpg';
 
 const Sponsors = () => {
   return (
-        <section id="sponsors" className="ud-sponsors">
-          <Container>
-            <Row>
-              <Col lg={12}>
-                <div className="ud-section-title mx-auto text-center">
-                  <h2 data-aos="zoom-in-down">SPONSORS</h2>
-                  <div className="text">
-                    {/* <p>
-                      Here are the our honurable sponsors.
+      <section id="sponsors" className="ud-sponsors">
+        <Container className="px-3 px-lg-2">
+          <Row>
+            <Col xs={12}>
+              <div className="aw-sponsors-title">
+                <h2 className="mx-auto text-center my-2 p-3 py-2 mb-2">SPONSORS</h2>
+                <div className="text">
+                  {/* <p>
+                      Here are the our honorable sponsors.
                     </p> */}
-                  </div>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </Col>
+          </Row>
 
-            <Row>
-              <h3 className="platinum-sponsor" data-aos="flip-left">PLATINUM SPONSOR</h3>
-                {/* <SingleSponsor 
+          <Row>
+            <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-3 pt-lg-0" data-aos="flip-left">PLATINUM SPONSOR</h4>
+            {/* <SingleSponsor
                   animation = "fade-right"
                   sponsor_no = "ud-single-sponser first"
                   logo1 = {company1}
@@ -33,16 +33,16 @@ const Sponsors = () => {
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
 
-                <SingleSponsor 
-                  animation = "zoom-in"
-                  sponsor_no = "ud-single-sponser second"
-                  logo1 = {company1}
-                  logo2 = {company2}
-                  company = "ABC COMPANY"
-                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+            <SingleSponsor
+                animation="zoom-in"
+                sponsor_no="ud-single-sponser second"
+                logo1={company1}
+                logo2={company2}
+                company="ABC COMPANY"
+                description="Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                link="https://www.youtube.com/watch?v=yU9h2SS1JGY"/>
 
-                {/* <SingleSponsor 
+            {/* <SingleSponsor
                   animation = "fade-left"
                   sponsor_no = "ud-single-sponser third"
                   logo1 = {company1}
@@ -50,20 +50,20 @@ const Sponsors = () => {
                   company = "ABC COMPANY"
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
-            </Row>
+          </Row>
 
-            <Row>
-              <h3 className="gold-sponsor" data-aos="flip-left">GOLD SPONSOR</h3>
-                <SingleSponsor 
-                  animation = "fade-right"
-                  sponsor_no = "ud-single-sponser fourth"
-                  logo1 = {company1}
-                  logo2 = {company2}
-                  company = "ABC COMPANY"
-                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
+          <Row className="mt-2">
+            <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-3" data-aos="flip-left">GOLD SPONSORS</h4>
+            <SingleSponsor
+                animation="fade-right"
+                sponsor_no="ud-single-sponser fourth"
+                logo1={company1}
+                logo2={company2}
+                company="ABC COMPANY"
+                description="Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                link="https://www.youtube.com/watch?v=yU9h2SS1JGY"/>
 
-                {/* <SingleSponsor 
+            {/* <SingleSponsor
                   animation = "zoom-in"
                   sponsor_no = "ud-single-sponser fifth"
                   logo1 = {company1}
@@ -72,17 +72,17 @@ const Sponsors = () => {
                   description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
 
-                <SingleSponsor 
-                  animation = "fade-left"
-                  sponsor_no = "ud-single-sponser sixth"
-                  logo1 = {company1}
-                  logo2 = {company2}
-                  company = "ABC COMPANY"
-                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
-                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
-            </Row>
+            <SingleSponsor
+                animation="fade-left"
+                sponsor_no="ud-single-sponser sixth"
+                logo1={company1}
+                logo2={company2}
+                company="ABC COMPANY"
+                description="Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                link="https://www.youtube.com/watch?v=yU9h2SS1JGY"/>
+          </Row>
 
-            {/* <Row>
+          {/* <Row>
               <h3 className="silver-sponsor" data-aos="flip-left">SILVER SPONSOR</h3>
                 <SingleSponsor 
                   animation = "fade-right"
@@ -112,8 +112,8 @@ const Sponsors = () => {
                   link = "https://www.youtube.com/embed/gqhOH4jkpVI" />
             </Row> */}
 
-          </Container>
-        </section>
+        </Container>
+      </section>
 
   );
 };

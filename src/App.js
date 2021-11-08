@@ -7,6 +7,7 @@ import './assets/scss/styles-main.scss';
 
 const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
+const Sponsors = loadable(() => import("./components/Sponsors"))
 
 function App() {
     // AOS.init();
@@ -16,7 +17,7 @@ function App() {
             <HeroSection/>
             <About/>
             <Awards/>
-            {/*<Sponsors/>*/}
+            <Sponsors/>
             {/*<Faq/>*/}
             {/*<Timeline/>*/}
             {/*<Footer/>*/}
