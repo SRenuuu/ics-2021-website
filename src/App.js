@@ -8,6 +8,7 @@ import './assets/scss/styles-main.scss';
 const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
 const Sponsors = loadable(() => import("./components/Sponsors"))
+const FAQ = loadable(() => import("./components/Faq"))
 
 function App() {
     // AOS.init();
@@ -18,7 +19,7 @@ function App() {
             <About/>
             <Awards/>
             <Sponsors/>
-            {/*<Faq/>*/}
+            <FAQ/>
             {/*<Timeline/>*/}
             {/*<Footer/>*/}
         </div>

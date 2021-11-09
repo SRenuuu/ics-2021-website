@@ -2,47 +2,60 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 
 .ud-faq {
-    padding-top: 120px;
-    padding-bottom: 90px;
-    background-color: #080b0b;
-    position: relative;
-    z-index: 1;
-    color: var(--white);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: rgba(10, 10, 10, 0.6) !important;
 
-    @media #{$xs } {
-        padding-top: 80px;
-        padding-bottom: 50px;
+    @media #{$xs} {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        color: var(--white);
+        padding: 20px;
+    }
+
+    .ud-section-title {
+        h5 {
+            font-weight: lighter;
+            font-size: 1.3em;
+            color: var(--primary-color);
+        }
     }
 }
 
-h2 {
-    color: var(--white);
-    padding: 20px;
-}
 
 .ud-single-faq {
-    background-color: rgba(31, 30, 30, 0.671);
-    backdrop-filter: blur(5px);
-    border: 1px solid var(--primary-color);;
-    border-radius: 10px;
+    background: rgba(20, 20, 20, 0.5) !important;
+    //backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
     margin-bottom: 30px;
+    color: var(--white) !important;
 
     .ud-faq-btn {
+        //reset default button styles
+        background: none;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        margin: 0;
+
         text-align: left;
         display: flex;
         width: 100%;
         align-items: center;
-        border: none;
-        background: transparent;
+        background: rgba(20, 20, 20, 0.5) !important;
 
         font-weight: 600;
         font-size: 18px;
         color: var(--white);
-        opacity: 0.88;
         padding: 30px;
 
         @media #{$lg, $xs} {
-            padding: 15px;
+            padding: 15px 20px;
         }
 
         &.collapsed {
@@ -73,31 +86,36 @@ h2 {
         span.icon {
             display: flex;
             align-items: center;
-            width: 30px;
-            height: 30px;
-            background: rgba(48, 86, 211, 0.06);
-            background-color: #191a18;
+            justify-content: center;
+
+            background: rgba(40, 40, 40, 0.8) !important;
             border-radius: 5px;
-            color: var(--primary-color);
-            margin-right: 20px;
-            padding: 5px;
+            color: var(--white);
+            margin-right: 21px;
+            padding: 5px 10px;
 
             i {
                 @include transform(rotate(180deg));
                 transition: all 0.3s;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 500;
+
+                @media #{$md, $xs} {
+                    font-size: 16px;
+                }
             }
         }
     }
 
     .ud-faq-body {
-        padding: 0 30px 40px 70px;
+        padding: 0 50px 40px 50px;
         text-align: justify;
         text-align-last: center;
+        background: rgba(20, 20, 20, 0.5) !important;
 
-        @media #{$lg, $xs} {
-            padding: 0 16px 20px 55px;
+        @media #{$xs} {
+            font-size: 0.9em;
+            padding: 0 30px 25px 30px;
         }
     }
 }
