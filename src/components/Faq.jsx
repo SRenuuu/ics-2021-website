@@ -1,69 +1,61 @@
 import React from "react";
-import {Accordion, Col, Container, Row} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import FaqComponent from "./FaqComponent";
 
 const Faq = () => {
     return (
-        <>
+        <React.Fragment>
             <section id="faq" className="ud-faq">
                 <Container>
                     <Row>
                         <Col lg={12}>
                             <div className="ud-section-title text-center mx-auto">
-                                <h5>Any Questions? Answered</h5>
+                                <span>Any Questions? Answered</span>
                                 <h2 data-aos="zoom-in-up">
                                     Frequently Asked Questions</h2>
                                 <br/>
                             </div>
                         </Col>
                     </Row>
-                    <Accordion defaultActiveKey="0">
-                        <Row className="my-2">
-                            <Col lg={6}>
-                                <FaqComponent
-                                    question="Question 01"
-                                    collapseId="collapseOne"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
 
-                                <FaqComponent
-                                    question="Question 02"
-                                    collapseId="collapseTwo"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
+                    <Row>
+                        <Col lg={6}>
+                            <FaqComponent 
+                                target = "#collapseOne"
+                                question = "What is a CTF?"
+                                collapseid = "collapseOne"
+                                answer = "CTF (Capture The Flag) is a kind of information security competition that challenges contestants to solve a variety of tasks ranging from a scavenger hunt on wikipedia to basic programming exercises, to hacking your way into a server to steal data."
+                            />
 
-                                <FaqComponent
-                                    question="Question 03"
-                                    collapseId="collapseThree"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
-                            </Col>
+                            <FaqComponent 
+                                target = "#collapseThree"
+                                question = "Who can participate in iCS 2.0?"
+                                collapseid = "collapseThree"
+                                answer = "Undergraduates can participate in iCS 2.0 as teams. A team has to be no more than 4 members and no less than 3 members."
+                            />
+                        </Col>
 
-                            <Col lg={6}>
-                                <FaqComponent
-                                    question="Question 04"
-                                    collapseId="collapseFour"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
+                        <Col lg={6}>
+                            <FaqComponent 
+                                target = "#collapseTwo"
+                                question = "How to register to iCS 2.0?"
+                                collapseid = "collapseTwo"
+                                answer = "You can register through this site (check upper right corner for the register button). There we will ask for the details of your team members and a small initial CTF will be there to test your skills."
+                            />
 
-                                <FaqComponent
-                                    question="Question 05"
-                                    collapseId="collapseFive"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
-
-                                <FaqComponent
-                                    question="Question 06"
-                                    collapseId="collapseSix"
-                                    answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                                />
-                            </Col>
-                        </Row>
-                    </Accordion>
+                            <FaqComponent 
+                                target = "#collapseFive"
+                                question = "Is iCS 2.0 a physical event?"
+                                collapseid = "collapseFive"
+                                answer =  {<p>No it is a <b>not</b> physical event and the event will be happening <b>virtually</b> due to the pandemic.</p>}
+                            />
+                        </Col>
+                    </Row>
                 </Container>
             </section>
-        </>
+        </React.Fragment>
     );
 };
 
 export default Faq;
+
