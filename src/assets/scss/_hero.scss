@@ -109,7 +109,7 @@
             .flip-countdown-card .flip-countdown-card-sec {
                 font-size: 35px;
 
-                @media #{$mobile, $sm} {
+                @media #{$xs} {
                     font-size: 40px;
                     .card__top, .card__bottom {
                         padding-top: 2.2px;
@@ -120,11 +120,11 @@
                     }
                 }
 
-                @media #{$laptop} {
+                @media #{$md, $lg, $laptop} {
                     font-size: 45px;
                 }
 
-                @media #{$desktop} {
+                @media #{$desktop, $xl-desktop} {
                     font-size: 60px;
                     //.card__top, .card__bottom, .card__back {
                     //    padding: 0 0.2em;
