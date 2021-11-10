@@ -1,69 +1,99 @@
 /* ===== Sponsors CSS ===== */
-
 .ud-sponsors {
     overflow-x: hidden;
-    padding: 50px 0;
-    background-color: rgb(19, 17, 17);
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background: rgba(10, 10, 10, 1) !important;
 
-    @media #{$xs} {
-        padding: 10px;
+    @media ($xs) {
+        padding-top: 50px;
+        padding-bottom: 60px;
     }
 
-    h2, h5, font {
+
+    h2, h3, h5, p {
         color: var(--white);
     }
 
-    h3 {
-        margin: 50px 10px;   
+    .aw-sponsors-title h2 {
+        padding: 15px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    h4 {
+        font-size: x-large;
     }
 
     .platinum-sponsor {
-        color: #E5E4E2;    
+        color: var(--silver);
     }
 
     .gold-sponsor {
-        color: #b8860b;    
+        color: var(--gold);
     }
 
     .silver-sponsor {
-        color: #B8B9BB;
+        color: var(--silver);
     }
 
-    .ud-single-sponser {
-        border-radius: 8px;
-        padding: 25px 5px;
+    .gold-border {
+        border: 1px solid var(--gold);
+    }
+
+    .platinum-border {
+        border: 1px solid var(--silver);
+    }
+
+    .silver-border {
+        border: 1px solid var(--silver);
+    }
+
+    .ud-single-sponsor {
+        @include transition(0.3s);
+        border-radius: 10px;
+        padding: 15px 5px 15px 5px;
         margin: 5px 5px;
-        background-color: #191a18;
+        background-color: rgba(20, 20, 20, 1) !important;
 
         &.second {
-            border: 1px solid #E5E4E2;
+            border: 1px solid var(--platinum);
             position: relative;
             left: 110%;
-            @media #{$xs} {
-                position: relative;
-                left: 0;
-            
-            }
-            
-    }
 
-        &.fourth , &.sixth {
-            border: 1px solid #b8860b;
-            position: relative;
-            left: 55%;
-            @media #{$xs} {
+            @media #{$md} {
+                left: 55%;
+            }
+
+            @media #{$xs, $sm} {
                 position: relative;
                 left: 0;
             }
-            
+
         }
 
-        // &.seventh , &.eighth , &.ninth {
-        //     border: 1px solid #B8B9BB;
-        // }
+        &.fourth, &.fifth {
+            border: 1px solid var(--gold);
+            position: relative;
+            left: 55%;
+
+            @media #{$xs, $sm, $md} {
+                position: relative;
+                left: 0;
+            }
+
+        }
 
         .header-section {
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
             @media #{$xs} {
                 flex-wrap: wrap;
                 //justify-content: space-around;
@@ -73,22 +103,11 @@
 
         }
 
-        // .logo-section {
-        //     width: 30%;
-        //     display: flex;
-        //     margin:0 5px;
-        //     padding: 0px;
-        //     @media #{$xs} {
-        //         flex-wrap: wrap;
-        //         justify-content: space-between;
-        //     }
-        //     @media #{$sm} {
-        //         flex-wrap: nowrap;
-
-        //     }
-        //     @media #{$mobile} {
-        //         flex-wrap: nowrap;
-        //     }
+        .logo-section {
+            img {
+                border-radius: 12px;
+            }
+        }
 
         .logo11 {
             padding: 5px 5px 5px 5px;
@@ -104,95 +123,41 @@
             height: 100px;
         }
 
-        h5{
-            color: var(--primary-color);
-        }
+        img {
+            height: 85px;
+            padding: 8px;
 
-        
-        .company {
-           
-            margin-top: 35px;
-            
-            // width: 100px;
-            // height: 100px;
-        }
-
-            img.logocsw{
-                height: 50px;
-                width: 180px;
-                margin-top: 15px;
-                padding: 10px;
-                @media #{$xs} {
-                    height: 50px;
-                }
-                @media #{$sm} {
-                    height: 50px;
-                }
+            @media #{$xs} {
+                height: 70px;
+            }
+            @media #{$sm} {
+                height: 120px;
             }
 
-
-            img.logoteksek{
-                height: 50px;
-                width: 150px;
-                margin-top: 15px;
-                padding: 10px;
-                @media #{$xs} {
-                    height: 50px;
-                }
-                @media #{$sm} {
-                    height: 50px;
-                }
-            }
-
-
-            img {
-                height: 90px;
-                width: 90px;
-                padding: 10px;
-                @media #{$xs} {
-                    height: 80px;
-                }
-                @media #{$sm} {
-                    height: 120px;
-                }
-
-            }
         }
 
-        // .company-name {
-        //     width: 70%;
-            
+        .company-name h5 {
+            word-break: break-word;
+            color: var(--primary-color) !important;
+            font-size: 1.6em;
 
-        //     h5{
-        //         padding-top: 50px;
-        //     }
-        // }
-
-        font {
-            font-size: medium;
         }
 
         .ud-content {
-            text-align: justify;
-            padding: 10px;
-            text-align-last: center;
+            text-align: center;
+            opacity: 0.92;
+            font-size: 0.95em;
         }
 
-        iframe {
-            @media #{$lg, $xs} {
-                width: 150px;
-                height: 100px;
-            }
+        .react-player__preview, iframe {
+            border-radius: 8px;
         }
     }
 
-    .ud-single-sponser:hover {
-        transform: scale(1.1);
-        transition: .2s;
-        // border-color: rgba(255, 139, 30, 0.692);
-    }
 
-    
+}
 
-
-
+.ud-single-sponsor:hover {
+    transform: scale(1.04);
+    @include transition(0.3s);
+}
