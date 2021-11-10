@@ -2,7 +2,7 @@ import {Col} from 'react-bootstrap';
 
 const AwardCard = ({place, prize, image, altText, type, pcolor, anim}) => {
     return (
-        <Col lg={4} md={6} sm={10} data-aos={anim}>
+        <Col lg={4} md={6} sm={10} data-aos={anim} data-aos-once="true">
             <div className={type}>
                 <span className="ud-awards-header">
                     <h3 className="aw-card-header h3">

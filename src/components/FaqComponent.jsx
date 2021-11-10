@@ -22,7 +22,7 @@ const FaqComponent = ({question, collapseId, answer}) => {
     }
 
     return (
-        <Card className="ud-single-faq" data-aos="fade-up">
+        <Card className="ud-single-faq" data-aos="fade-up" data-aos-once="true" >
             <Card.Header className="accordion m-0 p-0">
                 <ContextAwareToggle eventKey={collapseId}>
                         <span className="icon flex-shrink-0">

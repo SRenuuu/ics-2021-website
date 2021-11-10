@@ -25,7 +25,7 @@ const Sponsors = () => {
                 </Row>
 
                 <Row className="justify-content-center">
-                    <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">PLATINUM
+                    <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left" data-aos-once="true" >PLATINUM
                         SPONSOR</h4>
 
                     <SingleSponsor
@@ -51,7 +51,7 @@ const Sponsors = () => {
                 </Row>
 
                 <Row className="mt-2 pt-2 justify-content-center">
-                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">GOLD SPONSORS</h4>
+                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left" data-aos-once="true" >GOLD SPONSORS</h4>
                     <SingleSponsor
                         animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"

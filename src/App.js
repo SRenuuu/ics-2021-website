@@ -1,6 +1,6 @@
 import loadable from '@loadable/component'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import './assets/scss/styles-main.scss';
@@ -11,7 +11,7 @@ const Sponsors = loadable(() => import("./components/Sponsors"))
 const FAQ = loadable(() => import("./components/Faq"))
 
 function App() {
-    // AOS.init();
+    AOS.init();
     return (
         <div className="App">
             <NavBar/>

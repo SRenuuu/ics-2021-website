@@ -11,7 +11,7 @@ const Faq = () => {
                         <Col lg={12}>
                             <div className="ud-section-title text-center mx-auto">
                                 <h5>Any Questions? Answered</h5>
-                                <h2 data-aos="zoom-in-up">
+                                <h2 data-aos="zoom-in-up" data-aos-once="true">
                                     Frequently Asked Questions</h2>
                                 <br/>
                             </div>

@@ -15,7 +15,7 @@ const SingleSponsor = ({
                            link
                        }) => {
     return (
-        <Col lg={4} md={6} xs={12} data-aos={animation} className="my-2 my-lg-0 px-3 px-md-2 px-lg-2 px-xl-2">
+        <Col lg={4} md={6} xs={12} data-aos={animation} data-aos-once="true"  className="my-2 my-lg-0 px-3 px-md-2 px-lg-2 px-xl-2">
             <section className={sponsor_no}>
                 <div className="header-section px-3">
                     <div className="logo-section px-1 m-auto pt-1 pb-2 m-2">

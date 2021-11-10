@@ -10,7 +10,7 @@ const Awards = () => {
         <section id="awards" className="ud-awards aw-dark-back">
             <Container>
                 <Row>
-                    <Col lg={12} data-aos="zoom-in">
+                    <Col lg={12} data-aos="zoom-in" data-aos-once="true" >
                         <div className="aw-awards-title mx-auto text-center">
                             <h2>AWARDS</h2>
                         </div>
@@ -33,7 +33,7 @@ const Awards = () => {
                                altText="Gold trophy"
                                prize="Rs.35,000"
                                pcolor="#F9CA1A"
-                               anim="flip-up"/>
+                               anim="fade-up"/>
 
                     <AwardCard place="Third place"
                                type="ud-single-awards last-item"
