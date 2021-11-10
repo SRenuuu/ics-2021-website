@@ -26,7 +26,7 @@ const SingleSponsor = ({
                         <h5>{company}</h5>
                     </div>
                 </div>
-                <p className="ud-content py-3 px-3 mb-1 mx-1">
+                <p className="ud-content py-3 px-3 mb-1 mx-2">
                     {description}
                 </p>
 
