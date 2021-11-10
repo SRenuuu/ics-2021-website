@@ -9,6 +9,8 @@ const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
 const Sponsors = loadable(() => import("./components/Sponsors"))
 const FAQ = loadable(() => import("./components/Faq"))
+const Timeline = loadable(() => import("./components/TimelineMain"))
+const Footer = loadable(() => import("./components/footer"))
 
 function App() {
     AOS.init({duration:800,ease:'ease-in-out'});
@@ -20,8 +22,8 @@ function App() {
             <Awards/>
             <Sponsors/>
             <FAQ/>
-            {/*<Timeline/>*/}
-            {/*<Footer/>*/}
+            <Timeline/>
+            <Footer/>
         </div>
     );
 }

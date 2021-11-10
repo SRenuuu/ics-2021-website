@@ -31,8 +31,8 @@ class Timeline extends React.Component {
             <section className="head py-5" id="timeline" style={{background: 'black'}}>
                 <Container>
                     <Row>
-                        <Col xs={12} data-aos="zoom-in">
-                            <h2 className="neonText mx-auto text-center my-3 p-3">Timeline</h2>
+                        <Col xs={12} data-aos="zoom-in" data-aos-once="true">
+                            <h2 className="mx-auto text-center my-3 p-3">Timeline</h2>
                         </Col>
                     </Row>
                     <Row>
