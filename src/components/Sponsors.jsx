@@ -29,7 +29,7 @@ const Sponsors = () => {
                         SPONSOR</h4>
 
                     <SingleSponsor
-                        animation="zoom-in"
+                        animation="fade-up"
                         sponsor_no="ud-single-sponsor platinum-border"
                         logo1={zincat_logo}
                         logo1alt="Zincat Logo"
@@ -53,7 +53,7 @@ const Sponsors = () => {
                 <Row className="mt-2 pt-2 justify-content-center">
                     <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left" data-aos-once="true" >GOLD SPONSORS</h4>
                     <SingleSponsor
-                        animation="zoom-in"
+                        animation="fade-up"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={teksek_logo}
                         logo1alt="Teksek Logo"
@@ -65,7 +65,7 @@ const Sponsors = () => {
                         link={null}/>
 
                     <SingleSponsor
-                        animation="zoom-in"
+                        animation="fade-up"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={csw_logo}
                         logo1alt="CSW Logo"
@@ -77,7 +77,7 @@ const Sponsors = () => {
                         link={null}/>
 
                     <SingleSponsor
-                        animation="zoom-in"
+                        animation="fade-up"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={jit_logo}
                         logo1alt="Just In Time Group Logo"

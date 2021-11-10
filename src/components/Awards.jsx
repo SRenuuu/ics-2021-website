@@ -10,7 +10,7 @@ const Awards = () => {
         <section id="awards" className="ud-awards aw-dark-back">
             <Container>
                 <Row>
-                    <Col lg={12} data-aos="zoom-in" data-aos-once="true" >
+                    <Col lg={12} data-aos="zoom-in" data-aos-once="true">
                         <div className="aw-awards-title mx-auto text-center">
                             <h2>AWARDS</h2>
                         </div>

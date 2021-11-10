@@ -11,7 +11,7 @@ const Sponsors = loadable(() => import("./components/Sponsors"))
 const FAQ = loadable(() => import("./components/Faq"))
 
 function App() {
-    AOS.init();
+    AOS.init({duration:800,ease:'ease-in-out'});
     return (
         <div className="App">
             <NavBar/>
