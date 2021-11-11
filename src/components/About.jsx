@@ -8,7 +8,7 @@ const About = () => {
             <Container>
                 <Row>
                     <Col xs={12} data-aos="zoom-in">
-                        <h2 className="mx-auto text-center my-3 p-3">What is iCS Hack The World?</h2>
+                        <h2 className="mx-auto text-center my-3 p-3 neonSt">What is iCS Hack The World?</h2>
                     </Col>
                     <Col xs={12}>
                         <h4 className="text-center m-2 mt-3 text-light" data-aos="zoom-in-up">

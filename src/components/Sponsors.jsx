@@ -14,7 +14,7 @@ const Sponsors = () => {
                 <Row className="mt-0">
                     <Col xs={12}>
                         <div className="aw-sponsors-title" data-aos="zoom-in">
-                            <h2 className="mx-auto text-center">Sponsors</h2>
+                            <h2 className="mx-auto text-center neonSt">Sponsors</h2>
                             <div className="text">
                                 {/* <p>
                                 Here are the our honorable sponsors.

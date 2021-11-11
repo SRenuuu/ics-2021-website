@@ -114,8 +114,8 @@ const Gallery = () => {
             <Container>
                 <Row>
                     <Col xs={12}>
-                        <div className="aw-gallery-title mx-auto text-center" data-aos="zoom-in">
-                            <h2>Gallery</h2>
+                        <div className="aw-gallery-title mx-auto text-center neonSt" data-aos="zoom-in">
+                            <h2 className="pt-4">Gallery</h2>
                         </div>
                     </Col>
 
