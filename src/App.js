@@ -5,12 +5,12 @@ import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import './assets/scss/styles-main.scss';
 import loadable from '@loadable/component'
-import Gallery from "./components/Gallery";
 
 const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
 const Sponsors = loadable(() => import("./components/Sponsors"))
 const FAQ = loadable(() => import("./components/Faq"))
+const Gallery = loadable(() => import("./components/Gallery"))
 const Timeline = loadable(() => import("./components/TimelineMain"))
 const Footer = loadable(() => import("./components/Footer"))
 
