@@ -12,7 +12,7 @@ const Awards = () => {
                 <Row>
                     <Col lg={12}>
                         <div className="aw-awards-title mx-auto text-center" data-aos="zoom-in">
-                            <h2>AWARDS</h2>
+                            <h2>Awards</h2>
                         </div>
                     </Col>
                 </Row>

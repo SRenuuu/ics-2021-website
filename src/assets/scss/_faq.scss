@@ -58,6 +58,7 @@
             padding: 15px 20px;
         }
 
+
         &.collapsed {
             span.icon i {
                 @include transform(rotate(0deg));
@@ -113,10 +114,10 @@
         text-align-last: center;
         background: rgba(20, 20, 20, 0.5) !important;
         line-height: 1.6em !important;
-        font-size: 1.1em !important;
+        font-size: 1.08em !important;
 
         @media #{$xs} {
-            font-size: 0.9em;
+            font-size: 0.85em;
             padding: 0 30px 25px 30px;
         }
     }
