@@ -1,7 +1,6 @@
 import React from 'react';
 import Timeline2 from './Timeline2';
 import Timeline1 from './Timeline1';
-import '../assets/scss/_timeline.scss';
 import Nav from 'react-bootstrap/Nav';
 import {Col, Container, Row} from "react-bootstrap";
 

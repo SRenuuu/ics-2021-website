@@ -4,7 +4,6 @@ import logo from "../assets/images/ics-logo.webp"
 import FlipCountdown from '@rumess/react-flip-countdown';
 import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
-
 const HeroSection = () => {
     return (
         <section className="ud-hero" id="home">
