@@ -14,7 +14,7 @@
     }
 
     @media #{$laptop} {
-        padding-top: 100px;
+        padding-top: 85px;
         padding-bottom: 10px;
     }
 
@@ -28,24 +28,28 @@
     max-width: 780px;
     font-size: 18px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
         font-size: 19px;
     }
 
-    @media #{$md} {
+    @media #{$xs} {
         font-size: 20px;
     }
 
-    @media #{$lg} {
+    @media #{$md} {
         font-size: 22px;
+    }
+
+    @media #{$lg} {
+        font-size: 23px;
     }
 
     @media #{$laptop} {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     @media #{$desktop} {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     .ud-hero-title {
@@ -84,7 +88,7 @@
         text-align: center;
         font-size: 0.98em;
         line-height: 1.6em;
-        min-height: 65px;
+        min-height: 70px;
     }
 
     .ud-hero-desc {
@@ -181,15 +185,16 @@
 }
 
 .ud-hero-image {
-    max-width: 845px;
+    max-width: 840px;
     margin: auto;
     text-align: center;
     position: relative;
     z-index: 1;
 
     img {
-        max-width: 100%;
+        max-width: 95%;
         text-align: center;
+        justify-content: center;
     }
 
     .shape {
@@ -276,17 +281,17 @@
 }
 
 .slide-with-load-up {
-    animation: 1.7s ease-in-out 0s 1 slideInFromUp;
+    animation: 1.5s ease-out .3s 1 slideInFromUp;
 }
 
-.slide-with-load-bottom{
-    animation: 1.7s ease-in-out 0s 1 slideInFromBottom;
+.slide-with-load-bottom {
+    animation: 1.5s ease-out .3s 1 slideInFromBottom;
 }
 
-.slide-with-load-left{
-    animation: 1.7s ease-in-out 0s 1 slideInFromLeft;
+.slide-with-load-left {
+    animation: 1.5s ease-out .3s 1 slideInFromLeft;
 }
 
-.slide-with-load-right{
-    animation: 1.7s ease-in-out 0s 1 slideInFromRight;
+.slide-with-load-right {
+    animation: 1.5s ease-out .3s 1 slideInFromRight;
 }

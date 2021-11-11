@@ -9,9 +9,9 @@ const Faq = () => {
                 <Container>
                     <Row>
                         <Col lg={12}>
-                            <div className="ud-section-title text-center mx-auto">
-                                <h5 data-aos="zoom-in-up" data-aos-once="true">Any Questions? Answered</h5>
-                                <h2 data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="100">
+                            <div className="ud-section-title text-center mx-auto" data-aos="zoom-in">
+                                <h5>Any Questions? Answered</h5>
+                                <h2>
                                     Frequently Asked Questions</h2>
                                 <br/>
                             </div>

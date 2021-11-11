@@ -1,9 +1,10 @@
-import loadable from '@loadable/component'
-import AOS from 'aos';
+import {useEffect} from "react";
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import './assets/scss/styles-main.scss';
+import loadable from '@loadable/component'
 
 const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
@@ -12,10 +13,20 @@ const FAQ = loadable(() => import("./components/Faq"))
 const Timeline = loadable(() => import("./components/TimelineMain"))
 const Footer = loadable(() => import("./components/footer"))
 
-function App() {
-    AOS.init({duration:800,ease:'ease-in-out'});
+const App = () => {
+    useEffect(() => {
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            once: true,
+            duration: 800,
+            ease: 'ease-in-out',
+            delay: 100,
+        });
+
+    }, []);
+
     return (
-        <div className="App">
+        <main className="App">
             <NavBar/>
             <HeroSection/>
             <About/>
@@ -24,7 +35,7 @@ function App() {
             <FAQ/>
             <Timeline/>
             <Footer/>
-        </div>
+        </main>
     );
 }
 

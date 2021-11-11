@@ -13,7 +13,7 @@ const Sponsors = () => {
             <Container className="px-4 px-lg-2">
                 <Row className="mt-0">
                     <Col xs={12}>
-                        <div className="aw-sponsors-title">
+                        <div className="aw-sponsors-title" data-aos="zoom-in">
                             <h2 className="mx-auto text-center">SPONSORS</h2>
                             <div className="text">
                                 {/* <p>
@@ -25,11 +25,11 @@ const Sponsors = () => {
                 </Row>
 
                 <Row className="justify-content-center">
-                    <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left" data-aos-once="true" >PLATINUM
+                    <h4 className="platinum-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">PLATINUM
                         SPONSOR</h4>
 
                     <SingleSponsor
-                        animation="fade-up"
+                        animation="zoom-in"
                         sponsor_no="ud-single-sponsor platinum-border"
                         logo1={zincat_logo}
                         logo1alt="Zincat Logo"
@@ -51,9 +51,9 @@ const Sponsors = () => {
                 </Row>
 
                 <Row className="mt-2 pt-2 justify-content-center">
-                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left" data-aos-once="true" >GOLD SPONSORS</h4>
+                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">GOLD SPONSORS</h4>
                     <SingleSponsor
-                        animation="fade-up"
+                        animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={teksek_logo}
                         logo1alt="Teksek Logo"
@@ -65,7 +65,7 @@ const Sponsors = () => {
                         link={null}/>
 
                     <SingleSponsor
-                        animation="fade-up"
+                        animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={csw_logo}
                         logo1alt="CSW Logo"
@@ -77,7 +77,7 @@ const Sponsors = () => {
                         link={null}/>
 
                     <SingleSponsor
-                        animation="fade-up"
+                        animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={jit_logo}
                         logo1alt="Just In Time Group Logo"

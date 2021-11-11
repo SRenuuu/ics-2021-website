@@ -32,7 +32,7 @@ const NavBar = () => {
             <header className={scrollStyle}>
                 <Container>
                     <Row>
-                        <Col lg={12}>
+                        <Col xs={12} data-aos="fade-down">
                             <Navbar className="navbar" expand="lg">
                                 <Navbar.Brand className="navbar-brand" href="#">
                                     <img src={logo} alt="logo"/>

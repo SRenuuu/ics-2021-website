@@ -4,7 +4,7 @@ import logo from "../assets/images/ucsc-isg-logo.png"
 
 const Footer = () => {
     return (
-        <section className="footer">
+        <section className="footer" data-aos="fade-up">
             <div className="mt-3 mb-1 footer-logo">
                 <img src={logo} width="200px" alt="UCSC ISG Logo" className="m-0"/>
             </div>
