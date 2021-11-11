@@ -6,6 +6,27 @@ import Isotope from 'isotope-layout';
 // import Swiper from 'swiper';
 // import 'swiper/swiper-bundle.min.css';
 
+import hack1_1 from '../assets/images/gallery/ihack1/ihack11.webp'
+import hack1_2 from '../assets/images/gallery/ihack1/ihack12.webp'
+import hack1_3 from '../assets/images/gallery/ihack1/ihack13.webp'
+import hack2_1 from '../assets/images/gallery/ihack2/all.webp'
+import hack2_2 from '../assets/images/gallery/ihack2/think.webp'
+import hack2_3 from '../assets/images/gallery/ihack2/win.webp'
+import hack3_1 from '../assets/images/gallery/ihack3/gettingAdvice.webp'
+import hack3_2 from '../assets/images/gallery/ihack3/ihack33.webp'
+import hack3_3 from '../assets/images/gallery/ihack3/kdu.webp'
+import hack3_4 from '../assets/images/gallery/ihack3/speech.webp'
+import hack4_1 from '../assets/images/gallery/ihack4/1.webp'
+import hack4_2 from '../assets/images/gallery/ihack4/2.webp'
+import hack4_3 from '../assets/images/gallery/ihack4/4.webp'
+import hack5_1 from '../assets/images/gallery/ihack5/6.webp'
+import hack5_2 from '../assets/images/gallery/ihack5/8.webp'
+import hack5_3 from '../assets/images/gallery/ihack5/9.webp'
+import hack5_4 from '../assets/images/gallery/ihack5/13.webp'
+import hack151 from '../assets/images/gallery/ihack2015/6.webp'
+import hack153 from '../assets/images/gallery/ihack2015/9.webp'
+
+
 const Gallery = () => {
 
     /**
@@ -118,18 +139,21 @@ const Gallery = () => {
                                     <div className="col-lg-12 d-flex justify-content-center mb-2">
                                         <ul id="portfolio-flters">
                                             <li data-filter="*" className="filter-active">All</li>
-                                            <li data-filter=".filter-app">App</li>
-                                            <li data-filter=".filter-card">Card</li>
-                                            <li data-filter=".filter-web">Web</li>
+                                            <li data-filter=".filter-hack5">ihack 5.0</li>
+                                            <li data-filter=".filter-hack4">ihack 4.0</li>
+                                            <li data-filter=".filter-hack3">ihack 3.0</li>
+                                            <li data-filter=".filter-hack2">ihack 2.0</li>
+                                            <li data-filter=".filter-hack1">ihack 1.0</li>
+                                            <li data-filter=".filter-hack2015">ihack 2015</li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack1">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-1.jpg" className="img-fluid"
+                                            <img src={hack1_1} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>App 1</h4>
@@ -145,9 +169,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack1">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-2.jpg" className="img-fluid"
+                                            <img src={hack1_2} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Web 3</h4>
@@ -164,9 +188,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack1">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-3.jpg" className="img-fluid"
+                                            <img src={hack1_3} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>App 2</h4>
@@ -183,9 +207,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack2">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-4.jpg" className="img-fluid"
+                                            <img src={hack2_1} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Card 2</h4>
@@ -202,9 +226,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack2">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-5.jpg" className="img-fluid"
+                                            <img src={hack2_2} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Web 2</h4>
@@ -221,9 +245,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack2">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-6.jpg" className="img-fluid"
+                                            <img src={hack2_3} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>App 3</h4>
@@ -240,9 +264,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack3">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-7.jpg" className="img-fluid"
+                                            <img src={hack3_1} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Card 1</h4>
@@ -259,9 +283,9 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack3">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-8.jpg" className="img-fluid"
+                                            <img src={hack3_2} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Card 3</h4>
@@ -277,9 +301,199 @@ const Gallery = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack3">
                                         <div className="portfolio-wrap">
-                                            <img src="./assets/img/portfolio/portfolio-9.jpg" className="img-fluid"
+                                            <img src={hack3_3} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack3">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack3_4} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack4">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack4_1} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack4">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack4_2} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack4">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack4_3} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack5">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack5_1} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack5">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack5_2} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack5">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack5_3} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack5">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack5_4} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack2015">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack151} className="img-fluid"
+                                                 alt=""/>
+                                            <div className="portfolio-info">
+                                                <h4>Web 3</h4>
+                                                <p>Web</p>
+                                                {/*<div className="portfolio-links">*/}
+                                                {/*    <a href=""*/}
+                                                {/*       data-gallery="portfolioGallery"*/}
+                                                {/*       className="portfolio-lightbox" title="Web 3"><i*/}
+                                                {/*        className="bx bx-plus"/>+</a>*/}
+                                                {/*    /!*<a href="portfolio-details.html" title="More Details"><i*!/*/}
+                                                {/*    /!*    className="bx bx-link"/></a>*!/*/}
+                                                {/*</div>*/}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-4 col-md-6 portfolio-item filter-hack2015">
+                                        <div className="portfolio-wrap">
+                                            <img src={hack153} className="img-fluid"
                                                  alt=""/>
                                             <div className="portfolio-info">
                                                 <h4>Web 3</h4>
