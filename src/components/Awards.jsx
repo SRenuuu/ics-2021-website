@@ -11,8 +11,8 @@ const Awards = () => {
             <Container>
                 <Row>
                     <Col lg={12}>
-                        <div className="aw-awards-title mx-auto text-center neonSt" data-aos="zoom-in">
-                            <h2>Awards</h2>
+                        <div className="aw-awards-title mx-auto text-center" data-aos="zoom-in">
+                            <h2 className="neonSt">Awards</h2>
                         </div>
                     </Col>
                 </Row>
