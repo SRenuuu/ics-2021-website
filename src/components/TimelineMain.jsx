@@ -1,7 +1,6 @@
 import React from 'react';
 import Timeline2 from './Timeline2';
 import Timeline1 from './Timeline1';
-import '../assets/scss/_timeline.scss';
 import Nav from 'react-bootstrap/Nav';
 import {Col, Container, Row} from "react-bootstrap";
 
@@ -28,17 +27,19 @@ class Timeline extends React.Component {
 
     render() {
         return (
-            <section className="head py-5" id="timeline" style={{background: 'black'}}>
-                <Container>
-                    <Row>
-                        <Col xs={12} data-aos="zoom-in">
-                            <h2 className="neonText mx-auto text-center my-3 p-3">Timeline</h2>
+            <section className="head py-4 ud-timeline" id="timeline">
+                <Container fluid="sm" className="px-3 px-md-4">
+                    <Row className="mt-2 p-1">
+                        <Col xs={12}>
+                            <div data-aos="zoom-in">
+                                <h2 className="mx-auto text-center my-3 p-3 neonSt">Timeline</h2>
+                            </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <div className="head_title">
+                    <Row className="mb-2 p-1">
+                        <div className="head_title" data-aos="fade-up">
                             <Nav variant="pills" defaultActiveKey={1}>
-                                <Nav.Item>
+                                <Nav.Item className="mx-lg-3" data-aos="zoom-in">
                                     <Nav.Link eventKey={1} onClick={() => this.handleButtonClick()}>
                                         <div className="containers" id="#target">
                                             <div className="group">
@@ -52,9 +53,9 @@ class Timeline extends React.Component {
                                     </Nav.Link>
                                 </Nav.Item>
 
-                                <Nav.Item>
+                                <Nav.Item className="mx-2 mx-lg-3">
                                     <Nav.Link eventKey={2} onClick={() => this.handleButtonClick2()}>
-                                        <div className="containers">
+                                        <div className="containers" data-aos="zoom-in">
                                             <div className="group">
                                                 <span className='bot' id="top"/>
                                                 <div className="box">
@@ -64,14 +65,12 @@ class Timeline extends React.Component {
                                             </div>
                                         </div>
                                     </Nav.Link>
-
                                 </Nav.Item>
-
                             </Nav>
                         </div>
                     </Row>
-                    <Row>
-                        <Col className="timeline">
+                    <Row className="px-md-3 px-lg-0">
+                        <Col className="timeline p-3 mt-4 mb-4">
                             {
                                 this.state.div1Shown ?
                                     (<Timeline1/>)

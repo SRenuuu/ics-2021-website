@@ -2,19 +2,20 @@
 
 .ud-hero {
     background: var(--bs-black-rgb);
-    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.emagister.com.co/blog/wp-content/uploads/2021/08/ciberataque.jpg");
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("../images/alert-background.webp");
     background-position: center;
     min-height: fit-content;
     background-attachment: fixed;
-    padding-top: 100px;
+    background-repeat: no-repeat;
+    padding-top: 110px;
 
     @media #{$lg} {
-        padding-top: 100px;
+        padding-top: 90px;
     }
 
     @media #{$laptop} {
-        padding-top: 125px;
-        padding-bottom: 15px;
+        padding-top: 85px;
+        padding-bottom: 10px;
     }
 
     @media #{$desktop} {
@@ -27,16 +28,28 @@
     max-width: 780px;
     font-size: 18px;
 
-    @media #{$sm} {
+    @media #{$mobile} {
+        font-size: 19px;
+    }
+
+    @media #{$xs} {
         font-size: 20px;
     }
 
-    @media #{$laptop} {
+    @media #{$md} {
         font-size: 22px;
     }
 
+    @media #{$lg} {
+        font-size: 23px;
+    }
+
+    @media #{$laptop} {
+        font-size: 24px;
+    }
+
     @media #{$desktop} {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     .ud-hero-title {
@@ -52,15 +65,15 @@
         animation: bannerImgBounce 3s ease-in-out 0s infinite alternate;
 
         @media #{$sm} {
-            height: 200px;
+            height: 190px;
         }
 
         @media #{$md} {
-            height: 220px;
+            height: 200px;
         }
 
         @media #{$laptop} {
-            height: 220px;
+            height: 210px;
         }
 
         @media #{$desktop} {
@@ -73,14 +86,15 @@
         color: var(--white);
         opacity: 0.8;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.98em;
         line-height: 1.6em;
+        min-height: 70px;
     }
 
     .ud-hero-desc {
         font-weight: lighter;
         font-style: italic;
-        font-size: 0.8em;
+        font-size: 0.88em;
         text-align: center;
         color: var(--white);
         opacity: 0.8;
@@ -90,23 +104,40 @@
         color: rgba(255, 255, 255, 0.7);
 
         .flip-countdown-title {
-            font-size: 0.8em !important;
+            font-size: 0.76em !important;
             padding-top: 10px;
         }
 
         .flip-countdown-piece {
-            margin: 0 0.3em;
 
             .flip-countdown-card .flip-countdown-card-sec {
-                font-size: 64px;
-                margin: 15px;
+                font-size: 35px;
 
-                .card__top, .card__bottom, .card__back {
-                    padding: 0 0.2em;
+                @media #{$xs, $sm, $mobile} {
+                    font-size: 40px !important;
+                    .card__top, .card__bottom {
+                        padding-top: 2.2px;
+                    }
+
+                    .card__back {
+                        padding-top: 2.2px;
+                    }
                 }
 
-                .card__back {
-                    padding: 0 0.097em;
+                @media #{$md, $lg, $laptop} {
+                    font-size: 45px;
+                }
+
+                @media #{$desktop, $xl-desktop} {
+                    font-size: 60px;
+                    //.card__top, .card__bottom, .card__back {
+                    //    padding: 0 0.2em;
+                    //
+                    //}
+                    //
+                    //.card__back {
+                    //    padding: 0 0.097em;
+                    //}
                 }
             }
         }
@@ -154,15 +185,16 @@
 }
 
 .ud-hero-image {
-    max-width: 845px;
+    max-width: 840px;
     margin: auto;
     text-align: center;
     position: relative;
     z-index: 1;
 
     img {
-        max-width: 100%;
+        max-width: 95%;
         text-align: center;
+        justify-content: center;
     }
 
     .shape {
@@ -202,4 +234,64 @@
         -webkit-transform: translateY(-8px) translateX(0px);
         transform: translateY(-8px) translateX(0px);
     }
+}
+
+@keyframes slideInFromUp {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-with-load-up {
+    animation: 1.5s ease-out .3s 1 slideInFromUp;
+}
+
+.slide-with-load-bottom {
+    animation: 1.5s ease-out .3s 1 slideInFromBottom;
+}
+
+.slide-with-load-left {
+    animation: 1.5s ease-out .3s 1 slideInFromLeft;
+}
+
+.slide-with-load-right {
+    animation: 1.5s ease-out .3s 1 slideInFromRight;
 }

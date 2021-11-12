@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import logo from "../assets/images/ics-logo.png"
+import logo from "../assets/images/ics-logo.webp"
 import FlipCountdown from '@rumess/react-flip-countdown';
 import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
@@ -10,19 +10,23 @@ const HeroSection = () => {
             <Container>
                 <Row>
                     <Col lg={12} className="mb-5 pb-4">
-                        <div className="ud-hero-content wow fadeInUp m-auto" data-wow-delay=".2s">
-                            <img src={logo} alt="ISG Logo" className="mb-3 mb-md-2 mb-lg-1 mb-xxl-2 p-0 ud-hero-logo"/>
-                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-2 glitch" data-text="iCS - Hack The World">
+                        <div className="ud-hero-content m-auto">
+                            <div className="" data-aos="fade-down">
+                                <img src={logo} alt="ISG Logo"
+                                     className="mb-3 mb-md-2 mb-lg-1 mb-xxl-2 p-0 ud-hero-logo"/>
+                            </div>
+                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-2 glitch" data-text="iCS - Hack The World"
+                                data-aos="fade-down">
                                 iCS - Hack The World
                             </h1>
-                            <h3 className="ud-hero-subtitle pt-1 pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4">
+                            <h3 className="ud-hero-subtitle pt-1 pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4" data-aos="fade-up">
                                 <ReactRotatingText
                                     items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC', 'Get ready!']}/>
                             </h3>
-                            <p className="ud-hero-desc mt-3 mt-xxl-4 p-2">
+                            <p className="ud-hero-desc mt-3 mt-lg-2 mt-xxl-4 p-2" data-aos="fade-up">
                                 Registrations open in
                             </p>
-                            <div className="ud-hero-buttons my-2 mt-5 mt-sm-3 mt-lg-3 mt-xxl-4">
+                            <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4" data-aos="fade-up">
                                 {/*<a href="/" rel="nofollow noopener" target="_blank"*/}
                                 {/*   className="ud-main-btn ud-white-btn mx-3">*/}
                                 {/*  Register Now*/}
@@ -39,6 +43,7 @@ const HeroSection = () => {
                                     minuteTitle='Minutes'
                                     secondTitle='Seconds'
                                     endAt={"2021-11-15 00:00:00"} // Date/Time
+                                    data-aos="fade-up"
                                 />
 
                             </div>

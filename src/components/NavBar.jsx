@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import logo from '../pictures/logo/logo.png'
+import logo from '../assets/images/ics-logo.webp'
 import {Col, Container, Navbar, Row} from 'react-bootstrap';
-import {BsChevronUp, FaChevronUp} from "react-icons/all";
+import {FaChevronUp} from "react-icons/all";
 
 const NavBar = () => {
     const [scrollStyle, setScrollStyle] = useState("ud-header");
@@ -25,15 +25,16 @@ const NavBar = () => {
 
     return (
         <>
+            {/*eslint-disable-next-line*/}
             <a href="#" className="back-to-top" style={isBackToTopShown ? {opacity: 1} : {opacity: 0}}>
                 <FaChevronUp/>
             </a>
             <header className={scrollStyle}>
                 <Container>
                     <Row>
-                        <Col lg={12}>
+                        <Col xs={12} data-aos="fade-down">
                             <Navbar className="navbar" expand="lg">
-                                <Navbar.Brand className="navbar-brand" href="#home">
+                                <Navbar.Brand className="navbar-brand" href="#">
                                     <img src={logo} alt="logo"/>
                                 </Navbar.Brand>
                                 <button className={isActive ? "navbar-toggler active" : "navbar-toggler"}
@@ -45,30 +46,31 @@ const NavBar = () => {
                                 <div className={isActive ? "navbar-collapse show" : "navbar-collapse"}>
                                     <ul id="nav" className="navbar-nav mx-auto">
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#home">Home</a>
-                                        </li>
-                                        <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#about">About</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#pricing">Schedule</a>
+                                            <a className="ud-menu-scroll" href="#awards">Awards</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#team">Register</a>
+                                            <a href="#timeline">Timeline</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#contact">Awards</a>
+                                            <a href="#sponsors">Sponsors</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#contact">Past Events</a>
+                                            <a className="ud-menu-scroll" href="#gallery">Gallery</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a href="#faq">FAQ</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#contact">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="navbar-btn d-none d-sm-inline-block">
-                                    <a className="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                                <div className="navbar-btn d-none d-sm-inline-block mx-3">
+                                    {/*eslint-disable-next-line*/}
+                                    <a className="ud-main-btn ud-white-btn" href="#">
                                         Register
                                     </a>
                                 </div>

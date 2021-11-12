@@ -1,32 +1,45 @@
-//import logo from './logo.svg';
-import './assets/scss/styles-main.scss';
-import './App.css';
-import AOS from 'aos';
+import {useEffect} from "react";
 import 'aos/dist/aos.css';
-import Prizes from "./components/Prizes";
-import Faq from "./components/Faq";
-import Sponsors from './components/Sponsors';
+import AOS from 'aos';
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
-import Footer from "./components/footer"
-import Timeline from "./components/TimelineMain";
-import About from "./components/About";
-import ContactUs from "./components/ContactUs";
+import './assets/scss/styles-main.scss';
+import loadable from '@loadable/component'
 
-function App() {
-    AOS.init();
+const About = loadable(() => import("./components/About"))
+const Awards = loadable(() => import("./components/Awards"))
+const Sponsors = loadable(() => import("./components/Sponsors"))
+const FAQ = loadable(() => import("./components/Faq"))
+const Gallery = loadable(() => import("./components/Gallery"))
+const Timeline = loadable(() => import("./components/TimelineMain"))
+const ContactUs = loadable(() => import("./components/ContactUs"))
+const Footer = loadable(() => import("./components/Footer"))
+
+const App = () => {
+    useEffect(() => {
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            once: true,
+            duration: 800,
+            ease: 'ease-in-out',
+            delay: 100,
+        });
+
+    }, []);
+
     return (
-        <div className="App">
+        <main className="App">
             <NavBar/>
             <HeroSection/>
             <About/>
-            <Prizes/>
+            <Awards/>
             <Sponsors/>
-            <Faq/>
+            <FAQ/>
+            <Gallery/>
             <ContactUs/>
             <Timeline/>
             <Footer/>
-        </div>
+        </main>
     );
 }
 
