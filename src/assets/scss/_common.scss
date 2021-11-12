@@ -309,13 +309,13 @@ $NeonS: rgba(255, 102, 0, 0.5);
 }
 
 .neonSt{
-    text-shadow:
-        0 0 0 $NeonP,
-        0 0 4px $NeonP,
-        0 0 11px $NeonP,
-        0 0 20px $NeonS,
-        0 0 40px $NeonS,
-        0 0 600px $NeonS,
-        0 0 80px $NeonS,
-        0 0 110px $NeonS;
+    text-shadow: 0 0 0 rgb(255 102 0), 0 4px rgb(255 102 0 / 60%), 0 0 40px rgb(255 102 0 / 80%), 0 0 200px rgb(255 102 0)
+    //0 0 0 $NeonP,
+    //0 0 4px $NeonP,
+    //0 0 11px $NeonP,
+    //0 0 20px $NeonS,
+    //0 0 40px $NeonS,
+    //0 0 600px $NeonS,
+    //0 0 80px $NeonS,
+    //0 0 110px $NeonS;
 }
