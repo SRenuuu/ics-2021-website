@@ -10,6 +10,7 @@ const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
 const Sponsors = loadable(() => import("./components/Sponsors"))
 const FAQ = loadable(() => import("./components/Faq"))
+const Gallery = loadable(() => import("./components/Gallery"))
 const Timeline = loadable(() => import("./components/TimelineMain"))
 const Footer = loadable(() => import("./components/Footer"))
 
@@ -33,6 +34,7 @@ const App = () => {
             <Awards/>
             <Sponsors/>
             <FAQ/>
+            <Gallery/>
             <Timeline/>
             <Footer/>
         </main>
