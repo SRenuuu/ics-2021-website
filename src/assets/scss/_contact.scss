@@ -1,14 +1,40 @@
 /* ===== Contact CSS ===== */
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
-
 .ud-contact {
-  padding: 80px 0px;
-  position: relative;
-  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  background: rgba(20, 20, 20, 0.4) !important;
+
+  @media #{$md, $xs} {
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   @media #{$xs} {
-    padding: 10px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    color: var(--white);
+    padding: 20px;
+  }
+
+  .ud-section-title {
+    h5 {
+      font-weight: 600;
+      font-size: 1.3em;
+      color: var(--primary-color);
+
+      @media #{$xs, $md} {
+        font-size: 1.1em;
+      }
+
+    }
+  }
+
+  @media #{$xs} {
+    padding: 10px 0;
   }
 
   &::after {
@@ -27,26 +53,26 @@
   }
 }
 
-.ud-contact-title {
-  margin-bottom: 50px;
-
-  @media #{$md, $xs} {
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 41px;
-  }
-}
+//.ud-contact-title {
+//  margin-bottom: 50px;
+//
+//  @media #{$md, $xs} {
+//    margin-bottom: 15px;
+//  }
+//
+//  h2 {
+//    font-weight: 600;
+//    font-size: 35px;
+//    line-height: 41px;
+//  }
+//}
 
 .ud-contact-info-wrapper {
   // box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--primary-color);
-  border-radius: 8px;
+  border-radius: 10px;
   //backdrop-filter: blur(5px);
-  padding: 40px 50PX;
+  padding: 40px 50px;
   margin-bottom: 50px;
 
   @media #{$xs, $sm} {
@@ -54,22 +80,32 @@
   }
 
   @media #{$laptop, $lg} {
-    padding: 20px 60px;
+    padding: 30px 30px;
   }
 
   @media #{$md} {
-    padding: 30px 60px;
+    padding: 20px;
   }
 
   .ud-info-icon {
-    font-size: 32px;
+    font-size: 2em;
     color: var(--primary-color);
     display: flex;
     margin-bottom: 20px;
     padding-left: 50px;
 
-    @media #{$xs} {
+    @media #{$laptop} {
+      padding-left: 30px;
+    }
+
+    @media #{$lg} {
+      padding-left: 20px;
+    }
+
+    @media #{$xs, $md} {
       padding-left: 5px;
+      text-align: center;
+      justify-content: center;
     }
 
     i {
@@ -78,9 +114,24 @@
 
     h4 {
       font-weight: 600;
-      font-size: 22px;
+      font-size: 1.05em;
       color: var(--primary-color);
-      padding-top: 12px;
+      padding-top: 4px;
+      padding-left: 6px;
+
+      @media #{$laptop} {
+        font-size: 1em;
+      }
+
+      @media #{$lg} {
+        font-size: 0.9em;
+        padding-top: 5px;
+      }
+
+      @media #{$xs, $md} {
+        font-size: 0.8em;
+        padding-top: 8px;
+      }
     }
   }
 
@@ -88,42 +139,57 @@
 
     padding-left: 50px;
 
-    @media #{$xs} {
-      padding-left: 5px;
+    @media #{$laptop} {
+      padding-left: 30px;
+    }
+
+    @media #{$lg} {
+      padding-left: 20px;
+    }
+
+    @media #{$xs, $md} {
+      padding-left: 0;
     }
 
     p {
-      font-size: 15px;
+      font-size: 0.97em;
       color: var(--white);
       line-height: 24px;
       text-align: left;
+
+      @media #{$md, $xs} {
+        font-size: 0.85em;
+        text-align: center;
+        justify-content: center;
+      }
     }
   }
 }
 
 .map-wrapper {
-  padding-left: 50px;
-
-  @media #{$xs} {
-    padding-left: 5px;
-  }
+  height: 100%;
 
   .map {
     display: flex;
-    width: 350px;
-    height: 200px;
-    padding: 5px 5px 5px 5px;
+    width: 360px;
+    height: 100%;
+    padding: 5px;
     border: 1px solid var(--white);
     border-radius: 8px;
     margin-bottom: 40px;
-  
-    @media #{$xs} {
-      width: 225px;
-      height: 160px;
-      margin-bottom: 20px;
+
+    @media #{$md} {
+      width: 80%;
+      height: 640px;
+      margin: auto;
     }
-  
-  } 
+
+    @media #{$xs} {
+      width: 90%;
+      margin: auto;
+    }
+
+  }
 }
 
   

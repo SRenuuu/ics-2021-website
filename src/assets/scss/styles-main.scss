@@ -9,11 +9,14 @@
 ======== */
 
 @import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+
 @import "variables";
 @import "mixin";
 @import "common";
 @import "header";
 @import "hero";
+@import "about";
 @import "awards";
 @import "timeline";
 @import "sponsors";
