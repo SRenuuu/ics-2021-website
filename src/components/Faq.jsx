@@ -10,7 +10,6 @@ const Faq = () => {
                     <Row>
                         <Col lg={12}>
                             <div className="ud-section-title text-center mx-auto" data-aos="zoom-in">
-                                <h5>Any Questions? Answered</h5>
                                 <h2 className="neonSt">
                                     Frequently Asked Questions</h2>
                                 <br/>

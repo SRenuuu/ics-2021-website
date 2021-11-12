@@ -23,7 +23,7 @@ const Awards = () => {
                                type="ud-single-awards first-item"
                                image={secondPlacePic}
                                altText="Silver trophy"
-                               prize="Rs.20,000"
+                               prize="Rs.35,000"
                                pcolor="#CBD5DB"
                                anim="fade-right"/>
 
@@ -31,7 +31,7 @@ const Awards = () => {
                                type="ud-single-awards active"
                                image={firstPlacePic}
                                altText="Gold trophy"
-                               prize="Rs.35,000"
+                               prize="Rs.50,000"
                                pcolor="#F9CA1A"
                                anim="fade-up"/>
 
@@ -44,13 +44,13 @@ const Awards = () => {
                                anim="fade-left"
                     />
                 </Row>
-                <Row>
-                    <Col lg={7} className="m-auto">
-                        <h4 className="text-center aw-consolation effectHv">
-                            Consolation awards for other participants
-                        </h4>
-                    </Col>
-                </Row>
+                {/*<Row>*/}
+                {/*    <Col lg={7} className="m-auto">*/}
+                {/*        <h4 className="text-center aw-consolation effectHv">*/}
+                {/*            Consolation awards for other participants*/}
+                {/*        </h4>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
             </Container>
         </section>
     );

@@ -1,5 +1,5 @@
 .ud-timeline {
-    background: rgba(0, 0, 0, 1) !important;
+    background: transparent !important;
     overflow-x: hidden;
 
     .nav.nav-pills {
@@ -107,7 +107,7 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        padding-top: 6px !important;
+        padding-top: 10px !important;
         box-shadow: 0 2px 0 4px #fff, inset 0 0 0 #fff, 0 0 0 3px #fff
     }
 
@@ -122,19 +122,6 @@
         box-shadow: 0 4px 0 var(--body-color);
     }
 
-    @media only screen and (min-width: 1170px) {
-        .vertical-timeline-element-content {
-            padding: 1.6em;
-        }
-
-        .vertical-timeline--two-columns .vertical-timeline-element-icon {
-            width: 60px;
-            height: 60px;
-            left: 50%;
-            margin-left: -30px
-        }
-    }
-
     @media only screen and (max-width: 1199px) {
         .vertical-timeline-element-content {
             padding-top: 1.3em;
@@ -142,9 +129,13 @@
     }
 
     @media only screen and (min-width: 1170px) {
+        .vertical-timeline-element-content {
+            padding: 1.6em;
+        }
+
         .vertical-timeline--two-columns .vertical-timeline-element-icon {
-            width: 45px;
-            height: 45px;
+            width: 45px !important;
+            height: 45px !important;
             left: 50%;
             margin-left: -32px
         }

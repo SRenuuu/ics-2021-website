@@ -11,7 +11,7 @@ const ContactUs = () => {
                 <div className="ud-section-title text-center mx-auto" data-aos="zoom-in">
                   <h2 className="neonSt">
                     Contact Us</h2>
-                  <h5>ISACA Student Group of UCSC</h5>
+                  <h5>UCSC ISACA Student Group</h5>
                   <br/>
                 </div>
               </Col>
@@ -44,7 +44,7 @@ const ContactUs = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={12} className="mt-5 mt-lg-0">
+                    <Col md={12} className="mt-5 mt-sm-4 mt-lg-3">
                       <div className="ud-info-icon">
                         <i className="bi bi-envelope-fill" data-aos="fade-up"/>
                         <h4 data-aos="fade-up">CONTACT</h4>
@@ -55,17 +55,9 @@ const ContactUs = () => {
                         <Col md={6}>
                           <p>
                             <div className="ud-info-meta two" data-aos="fade-up">
-                              <p>Name</p>
-                              <p>Position, UCSC ISACA Student group</p>
-                              <p>contact@yourdomain.com</p>
-                            </div>
-                          </p>
-                          <br/>
-                          <p>
-                            <div className="ud-info-meta two" data-aos="fade-up">
-                              <p>Name</p>
-                              <p>Position, UCSC ISACA Student group</p>
-                              <p>contact@yourdomain.com</p>
+                              <p>General</p>
+                              <p>UCSC ISACA Student Group</p>
+                              <p>ucsc.isg@gmail.com</p>
                             </div>
                           </p>
                           <br/>
@@ -73,17 +65,9 @@ const ContactUs = () => {
                         <Col>
                           <p>
                             <div className="ud-info-meta two" data-aos="fade-up">
-                              <p>Name</p>
-                              <p>Position, UCSC ISACA Student group</p>
-                              <p>contact@yourdomain.com</p>
-                            </div>
-                          </p>
-                          <br/>
-                          <p>
-                            <div className="ud-info-meta two" data-aos="fade-up">
-                              <p>Name</p>
-                              <p>Position, UCSC ISACA Student group</p>
-                              <p>contact@yourdomain.com</p>
+                              <p>Dinendra Bandara</p>
+                              <p>Vice President, UCSC ISACA Student Group</p>
+                              <p>dinendradb@gmail.com</p>
                             </div>
                           </p>
                           <br/>

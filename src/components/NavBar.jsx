@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from '../assets/images/ics-logo.webp'
+import logo from '../assets/images/ics-2.0-logo.webp'
 import {Col, Container, Navbar, Row} from 'react-bootstrap';
 import {FaChevronUp} from "react-icons/all";
 
@@ -49,28 +49,30 @@ const NavBar = () => {
                                             <a className="ud-menu-scroll" href="#about">About</a>
                                         </li>
                                         <li className="nav-item">
+                                            <a className="ud-menu-scroll" href="#timeline">Timeline</a>
+                                        </li>
+                                        <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#awards">Awards</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#timeline">Timeline</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#sponsors">Sponsors</a>
+                                            <a className="ud-menu-scroll" href="#sponsors">Sponsors</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#gallery">Gallery</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#faq">FAQ</a>
+                                            <a className="ud-menu-scroll" href="#faq">FAQ</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#contact">Contact</a>
+                                            <a className="ud-menu-scroll" href="#contact">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="navbar-btn d-none d-sm-inline-block mx-3">
                                     {/*eslint-disable-next-line*/}
-                                    <a className="ud-main-btn ud-white-btn" href="#">
+                                    <a className="ud-main-btn ud-white-btn"
+                                       href="https://www.register.icsctf.cf/register"
+                                       target="_blank" rel="noreferrer">
                                         Register
                                     </a>
                                 </div>

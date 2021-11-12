@@ -3,7 +3,7 @@ import React, {Col, Container, Row} from 'react-bootstrap';
 const About = () => {
 
     return (
-        <section id="about" className="ud-about pt-1 pt-lg-0 pb-4 my-5">
+        <section id="about" className="ud-about pt-1 pt-lg-0 pb-3 my-5">
             <Container>
                 <Row>
                     <Col xs={12} data-aos="zoom-in">
@@ -20,7 +20,7 @@ const About = () => {
 
                 <Row className="my-4 py-2 pb-3">
                     <Col xs={12}>
-                        <div className="aw-about card animated fadeInDown py-2">
+                        <div className="aw-about card animated fadeInDown pt-3 pb-2">
                             <div className="card-group">
                                 <div className="card mb-4 border-0">
                                     <div className="card-body">
@@ -36,7 +36,8 @@ const About = () => {
                                     <div className="card-body">
                                         <div data-aos="fade-right">
                                             <h3 className="card-title">When is it?</h3>
-                                            <p className="card-text">On the 16th January 2021 from 8 am onwards.</p>
+                                            <p className="card-text">On the <strong>04th December 2021</strong> from 8am
+                                                onwards.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,10 +64,8 @@ const About = () => {
                                         <div data-aos="fade-right">
                                             <h3 className="card-title">No experience?</h3>
                                             <p className="card-text">We'll lend a hand. Join the sessions conducted by
-                                                our
-                                                sponsors on the 9th January 2021 via the online stream. But that's all
-                                                the
-                                                help you're gonna get from our end!</p>
+                                                our sponsors on 27th November 2021 via the online stream. But that's all
+                                                the help you're gonna get from our end!</p>
                                         </div>
                                     </div>
                                 </div>

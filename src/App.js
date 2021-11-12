@@ -24,7 +24,6 @@ const App = () => {
             ease: 'ease-in-out',
             delay: 100,
         });
-
     }, []);
 
     return (
@@ -32,12 +31,12 @@ const App = () => {
             <NavBar/>
             <HeroSection/>
             <About/>
+            <Timeline/>
             <Awards/>
             <Sponsors/>
-            <FAQ/>
             <Gallery/>
+            <FAQ/>
             <ContactUs/>
-            <Timeline/>
             <Footer/>
         </main>
     );

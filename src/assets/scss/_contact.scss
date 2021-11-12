@@ -1,27 +1,27 @@
 /* ===== Contact CSS ===== */
 .ud-contact {
-  padding-top: 50px;
-  padding-bottom: 35px;
-  background: rgba(20, 20, 20, 0.4) !important;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    background: rgba(20, 20, 20, 0.4) !important;
 
-  @media #{$md, $xs} {
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+    @media #{$md, $xs} {
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-  @media #{$xs} {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+    @media #{$xs} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-  h2 {
-    color: var(--white);
-    padding: 20px;
-  }
+    h2 {
+        color: var(--white);
+        padding: 20px;
+    }
 
-  .ud-section-title {
-    h5 {
+    .ud-section-title {
+        h5 {
       font-weight: 600;
       font-size: 1.3em;
       color: var(--primary-color);
@@ -113,25 +113,25 @@
     }
 
     h4 {
-      font-weight: 600;
-      font-size: 1.05em;
-      color: var(--primary-color);
-      padding-top: 4px;
-      padding-left: 6px;
+        font-weight: 600;
+        font-size: 0.95em;
+        color: var(--primary-color);
+        padding-top: 4px;
+        padding-left: 6px;
 
-      @media #{$laptop} {
-        font-size: 1em;
-      }
+        @media #{$laptop} {
+            font-size: 0.95em;
+        }
 
-      @media #{$lg} {
-        font-size: 0.9em;
-        padding-top: 5px;
-      }
+        @media #{$lg} {
+            font-size: 0.9em;
+            padding-top: 5px;
+        }
 
-      @media #{$xs, $md} {
-        font-size: 0.8em;
-        padding-top: 8px;
-      }
+        @media #{$xs, $md} {
+            font-size: 0.8em;
+            padding-top: 8px;
+        }
     }
   }
 

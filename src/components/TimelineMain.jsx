@@ -32,7 +32,7 @@ class Timeline extends React.Component {
                     <Row className="mt-2 p-1">
                         <Col xs={12}>
                             <div data-aos="zoom-in">
-                                <h2 className="mx-auto text-center my-3 p-3 neonSt">Timeline</h2>
+                                <h2 className="mx-auto text-center my-3 p-3 pb-4 neonSt">Timeline</h2>
                             </div>
                         </Col>
                     </Row>
