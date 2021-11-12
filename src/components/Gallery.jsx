@@ -113,7 +113,7 @@ const Gallery = () => {
     }, [])
 
     return (
-        <section id="gallery" className="ud-gallery pt-0 pt-lg-0 pb-0 my-5">
+        <section id="gallery" className="ud-gallery pt-0 pb-0 my-5">
             <Container fluid className="px-3">
                 <Row>
                     <Col xs={12}>

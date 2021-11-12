@@ -40,7 +40,7 @@ class Timeline extends React.Component {
                     <Row className="mb-2 p-1">
                         <div className="head_title" data-aos="fade-up">
                             <Nav variant="pills" defaultActiveKey={1}>
-                                <Nav.Item className="mx-lg-3">
+                                <Nav.Item className="mx-lg-3" data-aos="zoom-in">
                                     <Nav.Link eventKey={1} onClick={() => this.handleButtonClick()}>
                                         <div className="containers" id="#target">
                                             <div className="group">
@@ -56,7 +56,7 @@ class Timeline extends React.Component {
 
                                 <Nav.Item className="mx-2 mx-lg-3">
                                     <Nav.Link eventKey={2} onClick={() => this.handleButtonClick2()}>
-                                        <div className="containers">
+                                        <div className="containers" data-aos="zoom-in">
                                             <div className="group">
                                                 <span className='bot' id="top"/>
                                                 <div className="box">
