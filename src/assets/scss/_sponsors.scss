@@ -4,7 +4,10 @@
     margin: 0;
     padding-top: 50px;
     padding-bottom: 70px;
-    background: rgba(12, 12, 12, 1) !important;
+
+    z-index: 1 !important;
+    background: rgba(18, 18, 18, 1) !important;
+    position: relative !important;
 
     @media ($xs) {
         padding-top: 50px;

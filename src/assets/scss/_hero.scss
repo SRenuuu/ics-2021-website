@@ -2,7 +2,8 @@
 
 .ud-hero {
     background: var(--bs-black-rgb);
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)) !important;
+    position: relative !important;
     background-position: center;
     min-height: fit-content;
     //background-attachment: fixed;

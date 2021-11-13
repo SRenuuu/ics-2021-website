@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 .aw-dark {
-    background: black;
+    background: transparent !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 #awards {
@@ -12,15 +14,15 @@
 .aw-dark-back {
     margin: 0;
     padding: 0;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/tech-background.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    //background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../images/tech-background.webp);
+    //background-attachment: fixed;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //background-position: top;
 
     @media #{$mobile} {
-        background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/tech-background.webp);
-        background-attachment: scroll;
+        //background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/tech-background.webp);
+        //background-attachment: scroll;
     }
 }
 
@@ -62,7 +64,7 @@
     margin-bottom: 40px;
     background: var(--white);
     border: 2px solid #d4deff;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
     padding: 35px 25px;
     position: relative;
