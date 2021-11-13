@@ -1,19 +1,13 @@
-import React, {lazy, Suspense, useRef} from 'react';
+import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import {useInViewport} from 'react-in-viewport';
-
-const MapComponent = lazy(() => import('./MapComponent'));
+import MapComponent from './MapComponent';
+import LazyLoad from 'react-lazyload';
 
 const ContactUs = () => {
 
-  const config = {disconnectOnLeave: true}
-
-  const myRef = useRef();
-  const {inViewport} = useInViewport(myRef, config);
-
   return (
       <>
-        <section id="contact" className="ud-contact" ref={myRef}>
+        <section id="contact" className="ud-contact">
           <Container className="px-sm-3 px-lg-4">
             <Row>
               <Col lg={12}>
@@ -45,9 +39,9 @@ const ContactUs = () => {
                       <br/>
                     </Col>
                     <Col lg={6}>
-                      <Suspense fallback={<div/>}>
-                        {inViewport && <MapComponent/>}
-                      </Suspense>
+                      <LazyLoad once>
+                        <MapComponent/>
+                      </LazyLoad>
                     </Col>
                   </Row>
                   <Row>

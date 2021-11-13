@@ -11,7 +11,7 @@ import hack1_3 from '../assets/images/gallery/ihack1/ihack13.webp'
 import hack2_1 from '../assets/images/gallery/ihack2/all.webp'
 import hack2_2 from '../assets/images/gallery/ihack2/think.webp'
 import hack2_3 from '../assets/images/gallery/ihack2/win.webp'
-import hack3_1 from '../assets/images/gallery/ihack3/gettingAdvice.webp'
+import hack3_1 from '../assets/images/gallery/ihack3/getting_advice.webp'
 import hack3_2 from '../assets/images/gallery/ihack3/ihack33.webp'
 import hack3_3 from '../assets/images/gallery/ihack3/kdu.webp'
 import hack3_4 from '../assets/images/gallery/ihack3/speech.webp'
@@ -517,7 +517,6 @@ const Gallery = () => {
                 </Row>
             </Container>
         </section>
-
     );
 }
 

@@ -41,16 +41,20 @@
     content: "";
     position: absolute;
     z-index: -1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 50%;
-    background: #f3f4fe;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 50%;
+      background: #f3f4fe;
 
-    @media #{$lg} {
-      height: 45%;
-    }
+      @media #{$lg} {
+          height: 45%;
+      }
   }
+
+    .lazyload-wrapper {
+        height: 100%;
+    }
 }
 
 //.ud-contact-title {
