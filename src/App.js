@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import './assets/scss/styles-main.scss';
 import loadable from '@loadable/component'
+import LazyLoad from 'react-lazyload';
 
 const About = loadable(() => import("./components/About"))
 const Awards = loadable(() => import("./components/Awards"))
@@ -31,13 +32,27 @@ const App = () => {
             <NavBar/>
             <HeroSection/>
             <About/>
-            <Timeline/>
-            <Awards/>
-            <Sponsors/>
-            <Gallery/>
-            <FAQ/>
-            <ContactUs/>
-            <Footer/>
+            <LazyLoad once>
+                <Timeline/>
+            </LazyLoad>
+            <LazyLoad once>
+                <Awards/>
+            </LazyLoad>
+            <LazyLoad once>
+                <Sponsors/>
+            </LazyLoad>
+            <LazyLoad once>
+                <Gallery/>
+            </LazyLoad>
+            <LazyLoad once>
+                <FAQ/>
+            </LazyLoad>
+            <LazyLoad once>
+                <ContactUs/>
+            </LazyLoad>
+            <LazyLoad once>
+                <Footer/>
+            </LazyLoad>
         </main>
     );
 }
