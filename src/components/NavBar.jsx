@@ -71,8 +71,8 @@ const NavBar = () => {
                                 <div className="navbar-btn d-none d-sm-inline-block mx-3">
                                     {/*eslint-disable-next-line*/}
                                     <a className="ud-main-btn ud-white-btn"
-                                       href="https://www.register.icsctf.cf/register"
-                                       target="_blank" rel="noreferrer">
+                                       href="https://register.icsctf.cf/register"
+                                       target="_blank" rel="prefetch">
                                         Register
                                     </a>
                                 </div>
