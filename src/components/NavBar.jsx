@@ -32,7 +32,7 @@ const NavBar = () => {
             <header className={scrollStyle}>
                 <Container>
                     <Row>
-                        <Col xs={12} data-aos="fade-down">
+                        <Col xs={12} data-aos="fade-down" className="px-1 px-sm-2">
                             <Navbar className="navbar" expand="lg">
                                 <Navbar.Brand className="navbar-brand" href="#">
                                     <img src={logo} alt="logo"/>
@@ -68,9 +68,9 @@ const NavBar = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="navbar-btn d-none d-sm-inline-block mx-3">
+                                <div className="navbar-btn d-inline-block mx-3">
                                     {/*eslint-disable-next-line*/}
-                                    <a className="ud-main-btn ud-white-btn"
+                                    <a className="ud-main-btn ud-white-btn btn-sm"
                                        href="https://register.icsctf.cf/register"
                                        target="_blank" rel="prefetch">
                                         Register
