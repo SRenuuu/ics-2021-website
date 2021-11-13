@@ -16,9 +16,13 @@ const BGAnimation = (props) => {
                 gyroControls: true,
                 minHeight: 100,
                 minWidth: 100,
+                scale: 1.20,
+                scaleMobile: 1.50,
                 color: '#ff6600',
                 backgroundColor: '#000000',
-                points: 9.00
+                points: 10.00,
+                maxDistance: 20.00,
+                spacing: 15.00
             }))
         }
         return () => {

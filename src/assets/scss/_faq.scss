@@ -1,8 +1,9 @@
 /* ===== FAQ CSS ===== */
 .ud-faq {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 55px;
-    background: rgba(10, 10, 10, 0.6) !important;
+    background: transparent !important;
+    position: relative !important;
 
     @media #{$xs} {
         padding-top: 50px;
@@ -25,8 +26,8 @@
 
 
 .ud-single-faq {
-    background: rgba(20, 20, 20, 0.2) !important;
-    backdrop-filter: blur(5px);
+    background: rgba(10, 10, 10, 0.2) !important;
+    backdrop-filter: blur(8px);
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     margin-bottom: 30px;

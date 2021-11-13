@@ -3,8 +3,8 @@ import React, {Col, Container, Row} from 'react-bootstrap';
 const About = () => {
 
     return (
-        <section id="about" className="ud-about pt-1 pt-lg-0 pb-3 my-5">
-            <Container>
+        <section id="about" className="ud-about pt-4 pb-3 my-0">
+            <Container className="py-3">
                 <Row>
                     <Col xs={12} data-aos="zoom-in">
                         <h2 className="mx-auto text-center my-3 p-3 neonSt">What is iCS Hack The World?</h2>
