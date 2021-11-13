@@ -14,8 +14,8 @@ const BGAnimation = (props) => {
                 mouseControls: true,
                 touchControls: false,
                 gyroControls: true,
-                minHeight: '100%',
-                minWidth: '100%',
+                minHeight: 100,
+                minWidth: 100,
                 color: '#ff6600',
                 backgroundColor: '#000000',
                 points: 9.00
