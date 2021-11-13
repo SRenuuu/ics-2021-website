@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import SingleSponsor from './SingleSponsor';
+import SingleSponsorGroup from "./SingleSponsorGroup";
 
 import zincat_logo from '../assets/images/sponsors/zincat-logo.png'
 import teksek_logo from '../assets/images/sponsors/teksek-logo.png'
@@ -51,32 +52,26 @@ const Sponsors = () => {
                 </Row>
 
                 <Row className="mt-2 pt-2 justify-content-center">
-                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2" data-aos="flip-left">GOLD SPONSORS</h4>
-                    <SingleSponsor
+                    <h4 className="gold-sponsor my-3 my-lg-4 py-1 py-lg-2 pt-lg-3" data-aos="flip-left">GOLD
+                        SPONSORS</h4>
+
+                    <SingleSponsorGroup
+
                         animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={teksek_logo}
                         logo1alt="Teksek Logo"
                         logoStyles={{objectFit: "contain", width: "230px"}}
-                        logo2={null}
-                        logo2alt=""
-                        company="Teksek Cyber Security"
-                        description="TekSek Cyber Security provides powerful service offerings to dramatically improve the effectiveness & efficiency of cyber security teams. They serve clients in the telecommunications, banking & technology sectors in partnership with Cyber Security Works, Securin, Zuggand & RiskSense (acquired by Ivanti)."
+                        logo2={csw_logo}
+                        logo2alt="CSW Logo"
+                        company1="Teksek Cyber Security"
+                        company2="Cyber Security Works"
+                        description1="TekSek Cyber Security provides powerful service offerings to dramatically improve the effectiveness & efficiency of cyber security teams. They serve clients in the telecommunications, banking & technology sectors in partnership with Cyber Security Works, Securin, Zuggand & RiskSense (acquired by Ivanti)."
+                        description2="Founded in 2008, the CSW team now numbers over 150. Headquartered in Albuquerque, New Mexico, USA with offices in India, UAE & Singapore CSW serves 100+ active clients in North America, Middle East, South & Southeast Asia. CSW specializes in Vulnerability Management as a Service (VMaaS), Attack Surface Management (ASM) & PCI Compliance services. CSW is a US Department of Homeland Security sponsored CVE Numbering Authority (CNA) with over 50 zero-days to their name. CSW commenced engaging Sri Lankan clients in 2020 with support from their local partner, TekSek Cyber Security."
                         link={null}/>
 
                     <SingleSponsor
-                        animation="zoom-in"
-                        sponsor_no="ud-single-sponsor gold-border"
-                        logo1={csw_logo}
-                        logo1alt="CSW Logo"
-                        logoStyles={{objectFit: "contain", width: "230px"}}
-                        logo2={null}
-                        logo2alt=""
-                        company="Cyber Security Works"
-                        description="Founded in 2008, the CSW team now numbers over 150. Headquartered in Albuquerque, New Mexico, USA with offices in India, UAE & Singapore CSW serves 100+ active clients in North America, Middle East, South & Southeast Asia. CSW specializes in Vulnerability Management as a Service (VMaaS), Attack Surface Management (ASM) & PCI Compliance services. CSW is a US Department of Homeland Security sponsored CVE Numbering Authority (CNA) with over 50 zero-days to their name. CSW commenced engaging Sri Lankan clients in 2020 with support from their local partner, TekSek Cyber Security."
-                        link={null}/>
 
-                    <SingleSponsor
                         animation="zoom-in"
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={jit_logo}

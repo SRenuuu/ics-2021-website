@@ -134,7 +134,7 @@ const Gallery = () => {
                         <article id="gallery-photos" className="gallery">
                             <div className="container-fluid" data-aos="fade-up">
 
-                                <div className="row" data-aos="fade-up" data-aos-delay="100">
+                                <div className="row" data-aos="fade-up" data-aos-delay="50">
                                     <div className="col-lg-12 d-flex justify-content-center mb-2">
                                         <ul id="gallery-flters">
                                             <li data-filter="*" className="filter-active">All</li>
@@ -148,7 +148,7 @@ const Gallery = () => {
                                     </div>
                                 </div>
 
-                                <div className="row gallery-container" data-aos="fade-up" data-aos-delay="200">
+                                <div className="row gallery-container" data-aos="fade-up" data-aos-delay="100">
 
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack1">
                                         <div className="gallery-wrap">
