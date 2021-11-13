@@ -22,8 +22,9 @@ const SingleSponsor = ({
                 <div className="header-section px-3 pb-1">
                     <div className="logo-section px-1 m-auto pt-1 pb-2 m-2">
                         <img src={logo1} alt={logo1Alt} style={logoStyles}/>
+                        {logo2 && <img src={logo2} alt={logo2Alt} style={logoStyles}/>}
                     </div>
-                    <div className="company-name mx-3 px-3 my-auto pb-2 pt-2">
+                    <div className="company-name mx-3 px-3 my-auto pb-2 pt-3">
                         <h5>{company1}</h5>
                     </div>
                 </div>
@@ -35,7 +36,7 @@ const SingleSponsor = ({
                                       style={{margin: "auto auto 15px auto"}}/>}
                 <div className="header-section px-3 pt-1">
                     <div className="logo-section px-1 m-auto pt-1 pb-2 m-2">
-                        <img src={logo2} alt={logo2Alt} style={logoStyles}/>
+                        {/*<img src={logo2} alt={logo2Alt} style={logoStyles}/>*/}
                     </div>
                     <div className="company-name mx-3 px-3 my-auto pb-2 pt-2">
                         <h5>{company2}</h5>

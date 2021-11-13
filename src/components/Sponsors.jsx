@@ -31,10 +31,10 @@ const Sponsors = () => {
 
                     <SingleSponsor
                         animation="zoom-in"
-                        sponsor_no="ud-single-sponsor platinum-border"
+                        sponsor_no="ud-single-sponsor platinum-border platinum-sponsor"
                         logo1={zincat_logo}
                         logo1alt="Zincat Logo"
-                        logoStyles={{objectFit: "cover", width: "250px"}}
+                        logoStyles={{objectFit: "cover", width: "255px"}}
                         logo2={null}
                         logo2alt=""
                         company="Zincat"
@@ -61,7 +61,7 @@ const Sponsors = () => {
                         sponsor_no="ud-single-sponsor gold-border"
                         logo1={teksek_logo}
                         logo1alt="Teksek Logo"
-                        logoStyles={{objectFit: "contain", width: "230px"}}
+                        logoStyles={{objectFit: "contain", width: "230px", display: "inline-block", margin: "4px 10px"}}
                         logo2={csw_logo}
                         logo2alt="CSW Logo"
                         company1="Teksek Cyber Security"
