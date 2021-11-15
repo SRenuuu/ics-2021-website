@@ -113,8 +113,8 @@ const Gallery = () => {
     }, [])
 
     return (
-        <section id="gallery" className="ud-gallery pt-0 pb-0 my-5">
-            <Container fluid className="px-3">
+        <section id="gallery" className="ud-gallery pt-2 pb-3 pt-lg-3 pb-lg-4 my-0">
+            <Container fluid className="px-3 py-2">
                 <Row>
                     <Col xs={12}>
                         <div className="aw-gallery-title mx-auto text-center neonSt" data-aos="zoom-in">

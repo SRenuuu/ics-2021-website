@@ -3,13 +3,14 @@ import logo from "../assets/images/ucsc-isg-logo.png"
 
 const Footer = () => {
     return (
-        <section className="footer" data-aos="fade-up">
-            <div className="mt-2 mb-1 footer-logo">
+        <section className="footer">
+            <div className="mt-2 mb-1 footer-logo" data-aos="fade-up">
                 <img src={logo} alt="UCSC ISG Logo" className="m-0"/>
             </div>
 
-            <div className="footer-text px-4">iCS 2.0 - Organized by the UCSC ISACA Student Group</div>
-            <div className="socials">
+            <div className="footer-text px-4" data-aos="fade-up">iCS 2.0 - Organized by the UCSC ISACA Student Group
+            </div>
+            <div className="socials" data-aos="fade-up">
                 <div className="socials-facebook"><a href="https://www.facebook.com/isacastudentgroup.ucsc/"
                                                      target="_blank"
                                                      rel="noreferrer">
@@ -31,7 +32,8 @@ const Footer = () => {
                     </svg>
                 </a></div>
             </div>
-            <div className="footer-copyright px-2">Copyright © 2021 UCSC ISG. All rights reserved.</div>
+            <div className="footer-copyright px-2" data-aos="fade-up">Copyright © 2021 UCSC ISG. All rights reserved.
+            </div>
         </section>
     );
 };

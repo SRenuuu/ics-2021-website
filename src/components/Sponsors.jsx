@@ -7,6 +7,7 @@ import zincat_logo from '../assets/images/sponsors/zincat-logo.png'
 import teksek_logo from '../assets/images/sponsors/teksek-logo.png'
 import csw_logo from '../assets/images/sponsors/csw-logo.png'
 import jit_logo from '../assets/images/sponsors/jit-group-logo.png'
+import zone24x7_logo from '../assets/images/sponsors/zone24x7-logo.png'
 
 const Sponsors = () => {
     return (
@@ -83,6 +84,33 @@ const Sponsors = () => {
                         description="Just In Time Group (JIT) is a leading ICT Systems and Solutions Integrator, of over 25 years, being a strategic front-runner of the concept of ‘Integrated Solutions’ in Sri Lanka’s ICT sector is mission. JIT has a strong focus in the areas of strategic agile ICT Solutions such as Systems Integration Services, Geographical Information systems-based Software Solutions, Information Security Solutions, Data Analytics, Infrastructure Solutions and IT Resource Outsourcing targeting – Banking, Telecommunications, Government, Defence and Enterprise sectors."
                         link={"https://youtu.be/IbeH6orxo_4"}/>
                 </Row>
+
+                <Row className="mt-2 pt-2 justify-content-center">
+                    <h4 className="silver-sponsor my-3 my-lg-4 py-1 py-lg-2 pt-lg-3" data-aos="flip-left">SILVER
+                        SPONSOR</h4>
+
+                    <SingleSponsor
+                        animation="zoom-in"
+                        sponsor_no="ud-single-sponsor silver-border silver-sponsor"
+                        logo1={zone24x7_logo}
+                        logo1alt="Zone24x7 Logo"
+                        logoStyles={{objectFit: "contain", width: "240px"}}
+                        logo2={null}
+                        logo2alt=""
+                        company="Zone24x7"
+                        description="Zone24x7 is a digital transformation partner to a wide range of organizations from technology startups to Fortune 500 organizations. Headquartered in San Jose, California with the main technology center based in Colombo, Sri Lanka since 2004. The company is offering technology solutions with their expertise in Big Data & Data Science Engineering, Embedded Systems Engineering, Remote Monitoring & IoT, Cognitive Vision, and Robotics. Zone24x7 promotes a culture of customer-centric innovation, continuous learning, professionalism, caring for oneself and others, and integrity to create a diverse, inclusive, and thriving workplace for all its associates."
+                        link={"https://youtu.be/Gc_voMe8qwA"}/>
+
+                    {/* <SingleSponsor
+                  animation = "fade-left"
+                  sponsor_no = "ud-single-sponsor third"
+                  logo1 = {company1}
+                  logo2 = {company2}
+                  company = "ABC COMPANY"
+                  description = "Developments in digital technologies, from advancement in data, robotics, 3D printing and artificial intelligence, is at the core of Sandvik."
+                  link = "https://www.youtube.com/embed/gqhOH4jkpVI" /> */}
+                </Row>
+
 
                 {/* <Row>
               <h3 className="silver-sponsor" data-aos="flip-left">SILVER SPONSOR</h3>

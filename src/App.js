@@ -14,6 +14,7 @@ const Gallery = loadable(() => import("./components/Gallery"))
 const Timeline = loadable(() => import("./components/TimelineMain"))
 const ContactUs = loadable(() => import("./components/ContactUs"))
 const Footer = loadable(() => import("./components/Footer"))
+const BGAnimation = loadable(() => import("./components/BGAnimation"))
 
 const App = () => {
     useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
 
     return (
         <main className="App">
+            <BGAnimation/>
             <NavBar/>
             <HeroSection/>
             <About/>
