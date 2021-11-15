@@ -12,17 +12,17 @@ const BGAnimation = (props) => {
             setVantaEffect(NET({
                 el: myRef.current,
                 mouseControls: true,
-                touchControls: false,
-                gyroControls: true,
+                touchControls: true,
+                gyroControls: false,
                 minHeight: 100,
                 minWidth: 100,
-                scale: 1.20,
-                scaleMobile: 1.60,
+                scale: 1.00,
+                scaleMobile: 1.40,
                 color: '#ff6600',
                 backgroundColor: '#000000',
-                points: 10.00,
-                maxDistance: 20.00,
-                spacing: 15.00
+                points: 8.00,
+                maxDistance: 22.00,
+                spacing: 18.00,
             }))
         }
         return () => {
