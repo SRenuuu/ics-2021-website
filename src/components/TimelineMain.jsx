@@ -27,7 +27,7 @@ class Timeline extends React.Component {
 
     render() {
         return (
-            <section className="head py-4 ud-timeline" id="timeline">
+            <section id="timeline" className="head py-4 ud-timeline">
                 <Container fluid="sm" className="px-3 px-md-4">
                     <Row className="mt-2 p-1">
                         <Col xs={12}>

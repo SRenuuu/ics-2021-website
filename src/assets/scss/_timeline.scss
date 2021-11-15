@@ -105,17 +105,17 @@
     .vertical-timeline-element-icon {
         position: absolute;
         top: 0;
-        width: 50px;
-        left : -5px;
-        height: 50px;
-        border-radius: 60%;
-        padding-top: 10px !important;
+        width: 46px !important;
+        height: 46px !important;
+        border-radius: 50%;
+        padding-top: 6px !important;
+        margin-left: -3px;
         box-shadow: 0 2px 0 4px #fff, inset 0 0 0 #fff, 0 0 0 3px #fff
     }
 
     @media only screen and (min-width: 1170px) {
         .vertical-timeline-element-icon {
-            margin-left: -23px;
+            margin-left: -23px !important;
         }
     }
 

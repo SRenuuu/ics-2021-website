@@ -6,7 +6,7 @@ import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
 const HeroSection = () => {
     return (
-        <section className="ud-hero" id="home">
+        <section id="home" className="ud-hero">
             <Container>
                 <Row>
                     <Col lg={12} className="mb-5 pb-4">
