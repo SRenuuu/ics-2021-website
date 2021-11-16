@@ -19,28 +19,31 @@ const Awards = () => {
 
                 <Row className="align-items-center justify-content-center">
 
-                    <AwardCard place="Second place"
+                    <AwardCard order="order-2 order-lg-1"
+                               place="Second place"
                                type="ud-single-awards first-item"
                                image={secondPlacePic}
                                altText="Silver trophy"
                                prize="Rs.35,000"
-                               pcolor="#CBD5DB"
+                               pColor="#CBD5DB"
                                anim="fade-right"/>
 
-                    <AwardCard place="First place"
+                    <AwardCard order="order-1 order-lg-2"
+                               place="First place"
                                type="ud-single-awards active"
                                image={firstPlacePic}
                                altText="Gold trophy"
                                prize="Rs.50,000"
-                               pcolor="#F9CA1A"
+                               pColor="#F9CA1A"
                                anim="fade-up"/>
 
-                    <AwardCard place="Third place"
+                    <AwardCard order="order-3 order-lg-3"
+                               place="Third place"
                                type="ud-single-awards last-item"
                                image={thirdPlacePic}
                                altText="Bronze trophy"
                                prize="Rs.25,000"
-                               pcolor="#E28957"
+                               pColor="#E28957"
                                anim="fade-left"
                     />
                 </Row>
