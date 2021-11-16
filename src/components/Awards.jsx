@@ -39,7 +39,7 @@ const Awards = () => {
                                type="ud-single-awards last-item"
                                image={thirdPlacePic}
                                altText="Bronze trophy"
-                               prize="Rs.15,000"
+                               prize="Rs.25,000"
                                pcolor="#E28957"
                                anim="fade-left"
                     />
