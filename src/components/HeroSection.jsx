@@ -1,7 +1,6 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import logo from "../assets/images/ics-2.0-logo.webp"
-import FlipCountdown from '@rumess/react-flip-countdown';
 import ReactRotatingText from "react-rotating-text/lib/ReactRotatingText";
 
 const HeroSection = () => {
@@ -21,10 +20,13 @@ const HeroSection = () => {
                             </h1>
                             <h3 className="ud-hero-subtitle pt-1 pb-lg-1 my-3 my-md-2 mb-xxl-3 px-4" data-aos="fade-up">
                                 <ReactRotatingText
-                                    items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC', 'Get ready!']}/>
+                                    items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC']}/>
                             </h3>
-                            <p className="ud-hero-desc mt-3 mt-lg-2 mt-xxl-4 p-2" data-aos="fade-up">
-                                Registration closes in
+                            <p className="ud-hero-desc mt-4 mt-lg-2 mt-xxl-4 pt-4 pb-3" data-aos="fade-up">
+                                <i>Registration is now closed</i>
+                                <br/>
+                                <span
+                                    className="desc-text-special mt-2 mt-xxl-3 mb-2 p-2">Get ready for iCS sessions!</span>
                             </p>
                             <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4" data-aos="fade-up">
                                 {/*<a href="/" rel="nofollow noopener" target="_blank"*/}
@@ -32,19 +34,19 @@ const HeroSection = () => {
                                 {/*  Register Now*/}
                                 {/*</a>*/}
 
-                                <FlipCountdown
-                                    theme="dark"
-                                    hideYear
-                                    hideMonth
-                                    endAtZero
-                                    titlePosition="bottom"
-                                    dayTitle='Days'
-                                    hourTitle='Hours'
-                                    minuteTitle='Minutes'
-                                    secondTitle='Seconds'
-                                    endAt={"2021-11-23 00:00:00"} // Date/Time
-                                    data-aos="fade-up"
-                                />
+                                {/*<FlipCountdown*/}
+                                {/*    theme="dark"*/}
+                                {/*    hideYear*/}
+                                {/*    hideMonth*/}
+                                {/*    endAtZero*/}
+                                {/*    titlePosition="bottom"*/}
+                                {/*    dayTitle='Days'*/}
+                                {/*    hourTitle='Hours'*/}
+                                {/*    minuteTitle='Minutes'*/}
+                                {/*    secondTitle='Seconds'*/}
+                                {/*    endAt={"2021-11-23 00:00:00"} // Date/Time*/}
+                                {/*    data-aos="fade-up"*/}
+                                {/*/>*/}
 
                             </div>
                         </div>

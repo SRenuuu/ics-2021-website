@@ -94,11 +94,17 @@
 
     .ud-hero-desc {
         font-weight: lighter;
-        font-style: italic;
+        //font-style: italic;
         font-size: 0.88em;
         text-align: center;
         color: var(--white);
         opacity: 0.8;
+
+        .desc-text-special {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
     }
 
     .flip-countdown {
