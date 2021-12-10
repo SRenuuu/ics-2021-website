@@ -26,7 +26,7 @@ const HeroSection = () => {
                                 <i>Registration is now closed</i>
                                 <br/>
                                 <span
-                                    className="desc-text-special mt-2 mt-xxl-3 mb-2 p-2">Get ready for iCS sessions!</span>
+                                    className="desc-text-special mt-2 mt-xxl-3 mb-2 p-2">Get ready for the Final Competition!</span>
                             </p>
                             <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4" data-aos="fade-up">
                                 {/*<a href="/" rel="nofollow noopener" target="_blank"*/}
