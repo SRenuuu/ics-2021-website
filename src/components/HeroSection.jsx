@@ -14,7 +14,7 @@ const HeroSection = () => {
                                 <img src={logo} alt="ISG Logo"
                                      className="mb-3 mb-md-2 mb-lg-1 mb-xxl-2 p-0 ud-hero-logo"/>
                             </div>
-                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-2 glitch" data-text="iCS - Hack The World 2.0"
+                            <h1 className="ud-hero-title my-3 mb-4 mb-lg-2 glitch pb-1" data-text="iCS - Hack The World 2.0"
                                 data-aos="fade-down">
                                 iCS - Hack The World 2.0
                             </h1>
@@ -22,11 +22,11 @@ const HeroSection = () => {
                                 <ReactRotatingText
                                     items={['24-hour Capture The Flag (CTF) Competition', 'Organized by ISACA Student Group of UCSC']}/>
                             </h3>
-                            <p className="ud-hero-desc mt-4 mt-lg-2 mt-xxl-4 pt-4 pb-3" data-aos="fade-up">
-                                <i>Registration is now closed</i>
+                            <p className="ud-hero-desc mt-4 mt-lg-2 mt-xxl-4 pt-4 pb-2" data-aos="fade-up">
+                                <i>Thank you for joining with iCS 2.0 :)</i>
                                 <br/>
                                 <span
-                                    className="desc-text-special mt-2 mt-xxl-3 mb-2 p-2">Get ready for the Final Competition!</span>
+                                    className="desc-text-special mt-2 mt-xxl-3 mb-2 p-3">See you at iCS 3.0!</span>
                             </p>
                             <div className="ud-hero-buttons my-2 mt-4 mt-sm-3 mt-lg-3 mt-xxl-4" data-aos="fade-up">
                                 {/*<a href="/" rel="nofollow noopener" target="_blank"*/}
