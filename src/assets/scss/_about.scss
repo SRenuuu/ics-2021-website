@@ -1,4 +1,8 @@
 .ud-about {
+    z-index: 1 !important;
+    background: black !important;
+    position: relative !important;
+
     h4 {
         font-weight: 500;
         font-size: 1.1em;
@@ -6,10 +10,10 @@
     }
 
     .aw-about {
-        background: rgba(20, 20, 20, 0.5) !important;
+        background: rgba(10, 10, 10, 0.2);
         border: 1px solid var(--primary-color);
         border-radius: 15px;
-        //backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 
     .card-body {

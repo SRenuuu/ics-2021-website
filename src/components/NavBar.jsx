@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import logo from '../assets/images/ics-logo.webp'
+import logo from '../assets/images/ics-2.0-logo.webp'
 import {Col, Container, Navbar, Row} from 'react-bootstrap';
-import {FaChevronUp} from "react-icons/all";
+import {FaChevronUp} from "react-icons/fa";
 
 const NavBar = () => {
     const [scrollStyle, setScrollStyle] = useState("ud-header");
@@ -32,7 +32,7 @@ const NavBar = () => {
             <header className={scrollStyle}>
                 <Container>
                     <Row>
-                        <Col xs={12} data-aos="fade-down">
+                        <Col xs={12} data-aos="fade-down" className="px-1 px-sm-2">
                             <Navbar className="navbar" expand="lg">
                                 <Navbar.Brand className="navbar-brand" href="#">
                                     <img src={logo} alt="logo"/>
@@ -49,28 +49,30 @@ const NavBar = () => {
                                             <a className="ud-menu-scroll" href="#about">About</a>
                                         </li>
                                         <li className="nav-item">
+                                            <a className="ud-menu-scroll" href="#timeline">Timeline</a>
+                                        </li>
+                                        <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#awards">Awards</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#timeline">Timeline</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="#sponsors">Sponsors</a>
+                                            <a className="ud-menu-scroll" href="#sponsors">Sponsors</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="ud-menu-scroll" href="#gallery">Gallery</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#faq">FAQ</a>
+                                            <a className="ud-menu-scroll" href="#faq">FAQ</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="ud-menu-scroll" href="#contact">Contact</a>
+                                            <a className="ud-menu-scroll" href="#contact">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="navbar-btn d-none d-sm-inline-block mx-3">
+                                <div className="navbar-btn d-inline-block mx-3">
                                     {/*eslint-disable-next-line*/}
-                                    <a className="ud-main-btn ud-white-btn" href="#">
+                                    <a className="ud-main-btn ud-white-btn btn-sm"
+                                       href="https://register.icsctf.cf/register"
+                                       target="_blank" rel="prefetch">
                                         Register
                                     </a>
                                 </div>

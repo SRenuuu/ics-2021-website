@@ -28,6 +28,10 @@
     border-radius: 5px;
     position: relative;
     @include transition(0.3s);
+
+    @media #{$xs} {
+        padding: 10px 8px;
+    }
 }
 
 .navbar-brand {
@@ -229,6 +233,11 @@
     .ud-main-btn {
         padding: 8px 16px;
         background: transparent;
+
+        @media #{$xs} {
+            font-size: 0.9em;
+            padding: 6px 12px 8px 12px;
+        }
     }
 
     .ud-login-btn {

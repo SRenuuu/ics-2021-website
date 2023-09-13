@@ -2,42 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link href="%PUBLIC_URL%/favicon.ico" rel="icon"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="#000000" name="theme-color"/>
-    <meta
-            content="Web site created using create-react-app"
-            name="description"
-    />
-    <link href="%PUBLIC_URL%/logo192.png" rel="apple-touch-icon"/>
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link href="%PUBLIC_URL%/manifest.json" rel="manifest"/>
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link href="/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <meta content="#da532c" name="msapplication-TileColor">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="#000000" name="theme-color">
+    <meta content="Official landing page of iCS 2.0 organised by UCSC ISG" name="description">
+    <meta content="iCS, iCS 2.0, ctf, UCSC, Hack The World, Capture The Flag, ISACA Student Group" name="keywords">
+    <meta content="UCSC ISG" name="author">
+
+    <meta content="https://www.icsctf.cf/" property="og:url"/>
+    <meta content="Event page" property="og:type"/>
+    <meta content="iCS - Hack The World" property="og:title"/>
+    <meta content="Official landing page of iCS 2.0 organised by UCSC ISG" property="og:description"/>
+    <meta content="/ics-2.0-logo.webp" property="og:image"/>
+
+    <title>iCS - Hack The World</title>
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
-<!--
-  This HTML file is a template.
-  If you open it directly in the browser, you will see an empty page.
-
-  You can add webfonts, meta tags, or analytics to this file.
-  The build step will place the bundled scripts into the <body> tag.
-
-  To begin the development, run `npm start` or `yarn start`.
-  To create a production bundle, use `npm run build` or `yarn build`.
--->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ import hack1_3 from '../assets/images/gallery/ihack1/ihack13.webp'
 import hack2_1 from '../assets/images/gallery/ihack2/all.webp'
 import hack2_2 from '../assets/images/gallery/ihack2/think.webp'
 import hack2_3 from '../assets/images/gallery/ihack2/win.webp'
-import hack3_1 from '../assets/images/gallery/ihack3/gettingAdvice.webp'
+import hack3_1 from '../assets/images/gallery/ihack3/getting_advice.webp'
 import hack3_2 from '../assets/images/gallery/ihack3/ihack33.webp'
 import hack3_3 from '../assets/images/gallery/ihack3/kdu.webp'
 import hack3_4 from '../assets/images/gallery/ihack3/speech.webp'
@@ -113,8 +113,8 @@ const Gallery = () => {
     }, [])
 
     return (
-        <section id="gallery" className="ud-gallery pt-0 pb-0 my-5">
-            <Container fluid className="px-3">
+        <section id="gallery" className="ud-gallery pt-2 pb-3 pt-lg-3 pb-lg-4 my-0">
+            <Container fluid className="px-3 py-2">
                 <Row>
                     <Col xs={12}>
                         <div className="aw-gallery-title mx-auto text-center neonSt" data-aos="zoom-in">
@@ -134,7 +134,7 @@ const Gallery = () => {
                         <article id="gallery-photos" className="gallery">
                             <div className="container-fluid" data-aos="fade-up">
 
-                                <div className="row" data-aos="fade-up" data-aos-delay="100">
+                                <div className="row" data-aos="fade-up" data-aos-delay="50">
                                     <div className="col-lg-12 d-flex justify-content-center mb-2">
                                         <ul id="gallery-flters">
                                             <li data-filter="*" className="filter-active">All</li>
@@ -148,14 +148,14 @@ const Gallery = () => {
                                     </div>
                                 </div>
 
-                                <div className="row gallery-container" data-aos="fade-up" data-aos-delay="200">
+                                <div className="row gallery-container" data-aos="fade-up" data-aos-delay="100">
 
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack1">
                                         <div className="gallery-wrap">
                                             <img src={hack1_1} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 1.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>App 1</h4>
+                                                <h4>iHack 1.0</h4>
                                                 {/*<p>App</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="#"*/}
@@ -171,9 +171,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack1">
                                         <div className="gallery-wrap">
                                             <img src={hack1_2} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 1.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 1.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-2.jpg"*/}
@@ -190,9 +190,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack1">
                                         <div className="gallery-wrap">
                                             <img src={hack1_3} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 1.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>App 2</h4>
+                                                <h4>iHack 1.0</h4>
                                                 {/*<p>App</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-3.jpg"*/}
@@ -209,9 +209,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack2">
                                         <div className="gallery-wrap">
                                             <img src={hack2_1} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 2.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Card 2</h4>
+                                                <h4>iHack 2.0</h4>
                                                 {/*<p>Card</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-4.jpg"*/}
@@ -228,9 +228,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack2">
                                         <div className="gallery-wrap">
                                             <img src={hack2_2} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 2.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 2</h4>
+                                                <h4>iHack 2.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-5.jpg"*/}
@@ -247,9 +247,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack2">
                                         <div className="gallery-wrap">
                                             <img src={hack2_3} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 2.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>App 3</h4>
+                                                <h4>iHack 2.0</h4>
                                                 {/*<p>App</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-6.jpg"*/}
@@ -266,9 +266,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack3">
                                         <div className="gallery-wrap">
                                             <img src={hack3_1} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 3.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Card 1</h4>
+                                                <h4>iHack 3.0</h4>
                                                 {/*<p>Card</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-7.jpg"*/}
@@ -285,9 +285,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack3">
                                         <div className="gallery-wrap">
                                             <img src={hack3_2} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 3.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Card 3</h4>
+                                                <h4>iHack 3.0</h4>
                                                 {/*<p>Card</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href="./assets/img/gallery/gallery-8.jpg"*/}
@@ -303,9 +303,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack3">
                                         <div className="gallery-wrap">
                                             <img src={hack3_3} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 3.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 3.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -322,9 +322,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack3">
                                         <div className="gallery-wrap">
                                             <img src={hack3_4} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 3.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 3.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -341,9 +341,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack4">
                                         <div className="gallery-wrap">
                                             <img src={hack4_1} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 4.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 4.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -360,9 +360,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack4">
                                         <div className="gallery-wrap">
                                             <img src={hack4_2} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 4.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 4.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -379,9 +379,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack4">
                                         <div className="gallery-wrap">
                                             <img src={hack4_3} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 4.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 4.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -398,9 +398,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack5">
                                         <div className="gallery-wrap">
                                             <img src={hack5_1} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 5.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 5.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -417,9 +417,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack5">
                                         <div className="gallery-wrap">
                                             <img src={hack5_2} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 5.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 5.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -436,9 +436,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack5">
                                         <div className="gallery-wrap">
                                             <img src={hack5_3} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 5.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 5.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -455,9 +455,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack5">
                                         <div className="gallery-wrap">
                                             <img src={hack5_4} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 5.0 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 5.0</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -474,9 +474,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack2015">
                                         <div className="gallery-wrap">
                                             <img src={hack151} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 2015 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 2015</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -493,9 +493,9 @@ const Gallery = () => {
                                     <div className="col-lg-4 col-md-6 gallery-item filter-hack2015">
                                         <div className="gallery-wrap">
                                             <img src={hack153} className="img-fluid"
-                                                 alt=""/>
+                                                 alt="iHack 2015 photo"/>
                                             <div className="gallery-info">
-                                                <h4>Web 3</h4>
+                                                <h4>iHack 2015</h4>
                                                 {/*<p>Web</p>*/}
                                                 {/*<div className="gallery-links">*/}
                                                 {/*    <a href=""*/}
@@ -517,7 +517,6 @@ const Gallery = () => {
                 </Row>
             </Container>
         </section>
-
     );
 }
 
