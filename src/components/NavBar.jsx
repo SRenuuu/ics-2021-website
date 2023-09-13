@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import logo from '../assets/images/ics-2.0-logo.webp'
 import {Col, Container, Navbar, Row} from 'react-bootstrap';
-import {FaChevronUp} from "react-icons/all";
+import {FaChevronUp} from "react-icons/fa";
 
 const NavBar = () => {
     const [scrollStyle, setScrollStyle] = useState("ud-header");
